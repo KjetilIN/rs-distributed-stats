@@ -7,7 +7,7 @@ The system consists of a distributed International Statistics Service. The Appli
 ## Features
 
 - Proxy (load balancing) Server
-- Statistics Server
+- gRPC Server for remote method execution 
 - SQLite database for all data
 
 ## Usage
