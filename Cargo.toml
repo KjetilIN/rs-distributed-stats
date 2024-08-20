@@ -1,12 +1,12 @@
 [package]
-name = "rust-distributed-stats"
+name = "rs-distributed-stats"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]] # Bin to run the HelloWorld gRPC server
-name = "rust-distributed-stats-server"
+name = "rs-distributed-stats-server"
 path = "src/server.rs"
 
 
@@ -15,6 +15,7 @@ rusqlite = "0.32.1"
 tonic = "0.12.1"
 prost = "0.13"
 tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+libsqlite3-sys = {version = "0.30.1", features = ["bundled"]}
 
 [build-dependencies]
 tonic-build = "0.12"

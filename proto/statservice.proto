@@ -2,8 +2,7 @@ syntax = "proto3";
 package statservice;
 
 // Statistics server
-service GrpcStatServer{
-    
+service StatMethods{
     // Method for counting data 
     rpc GetRecordsCount (Empty) returns (RecordsResponse);  
 }

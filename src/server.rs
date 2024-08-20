@@ -1,34 +1,24 @@
 use std::{error::Error, net::SocketAddr};
 
 use rusqlite::Connection;
+
+use stat_service::stat_methods_server::{StatMethods, StatMethodsServer};
 use stat_service::{Empty, RecordsResponse};
+
 use tonic::{transport::Server, Request, Response, Status};
 
 pub mod stat_service {
     tonic::include_proto!("statservice"); 
 }
 
-#[derive(Debug, Clone)]
-pub struct StatServer{
-    pub sqlite_db: String, 
-}
-
-impl StatServer {
-    fn new() -> Self{
-        Self { sqlite_db: "db/city_database.db".to_string() }
-    }
-}
+#[derive(Debug, Default)]
+pub struct StatServer{}
 
 #[tonic::async_trait]
-pub trait GrpcStatServer {
-    async fn get_records_count(&self, request: Request<Empty>) -> Result<Response<RecordsResponse>, Status>;
-}
-
-
-impl GrpcStatServer for StatServer {
+impl StatMethods for StatServer {
     async fn get_records_count(&self, request: Request<Empty>) -> Result<Response<RecordsResponse>, Status> {
         // Connect to the db or return error
-        let connection = match Connection::open(&self.sqlite_db){
+        let connection = match Connection::open(&"db/city_database.db"){
             Ok(val) => val,
             Err(_) => {
                 println!("[ERROR] Could not connect to SQLite DB");
@@ -61,10 +51,13 @@ impl GrpcStatServer for StatServer {
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let addr = "[::1]:50051".parse::<SocketAddr>()?;
 
-    let server: StatServer = StatServer::new(); 
+    let server: StatServer = StatServer::default(); 
+
+    // Logging that the server has started 
+    println!("[INFO] Server started on {}", addr);
 
     Server::builder()
-        .add_service(GrpcStatServer::new())
+        .add_service(StatMethodsServer::new(server))
         .serve(addr)
         .await?;
 

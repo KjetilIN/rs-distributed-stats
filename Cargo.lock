@@ -500,6 +500,7 @@ version = "0.30.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2e99fb7a497b1e3339bc746195567ed8d3e24945ecd636e3619d20b9de9e9149"
 dependencies = [
+ "cc",
  "pkg-config",
  "vcpkg",
 ]
@@ -780,6 +781,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7a66a03ae7c801facd77a29370b4faec201768915ac14a721ba36f20bc9c209b"
 
 [[package]]
+name = "rs-distributed-stats"
+version = "0.1.0"
+dependencies = [
+ "libsqlite3-sys",
+ "prost",
+ "rusqlite",
+ "tokio",
+ "tonic",
+ "tonic-build",
+]
+
+[[package]]
 name = "rusqlite"
 version = "0.32.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -791,17 +804,6 @@ dependencies = [
  "hashlink",
  "libsqlite3-sys",
  "smallvec",
-]
-
-[[package]]
-name = "rust-distributed-stats"
-version = "0.1.0"
-dependencies = [
- "prost",
- "rusqlite",
- "tokio",
- "tonic",
- "tonic-build",
 ]
 
 [[package]]
