@@ -1,4 +1,4 @@
-use std::{error::Error, net::SocketAddr};
+use std::net::SocketAddr;
 
 use rusqlite::Connection;
 
@@ -16,7 +16,10 @@ pub struct StatServer{}
 
 #[tonic::async_trait]
 impl StatMethods for StatServer {
-    async fn get_records_count(&self, request: Request<Empty>) -> Result<Response<RecordsResponse>, Status> {
+    async fn get_records_count(&self, _: Request<Empty>) -> Result<Response<RecordsResponse>, Status> {
+        // Logging request
+        println!("[INFO] Request to count records..");
+
         // Connect to the db or return error
         let connection = match Connection::open(&"db/city_database.db"){
             Ok(val) => val,
@@ -47,6 +50,7 @@ impl StatMethods for StatServer {
 }
 
 
+#[allow(dead_code)]
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let addr = "[::1]:50051".parse::<SocketAddr>()?;
