@@ -24,3 +24,5 @@ https://github.com/rufuspollock/csv2sqlite
 Dataset for the statistics: <br>
 https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&sort=name
 
+tonic (gRPC package) server client tutorial: <br>
+https://github.com/hyperium/tonic/blob/master/examples/helloworld-tutorial.md 

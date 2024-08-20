@@ -1,0 +1,23 @@
+syntax = "proto3";
+package statservice;
+
+// Statistics server
+service GrpcStatServer{
+    
+    // Method for counting data 
+    rpc GetRecordsCount (Empty) returns (RecordsResponse);  
+}
+
+
+
+
+// Defining messages
+
+message Empty{
+
+}
+
+message RecordsResponse {
+    // Reply contains the greeting message
+    int32 records = 1;
+}
