@@ -3,7 +3,7 @@ use std::net::SocketAddr;
 use rusqlite::Connection;
 
 use stat_service::stat_methods_server::{StatMethods, StatMethodsServer};
-use stat_service::{Empty, RecordsResponse, PopulationRequest, PopulationResponse, NumberOfCitiesRequest, NumberOfCitiesResponse, NumberOfCountriesRequest, NumberOfCountriesResponse};
+use stat_service::{Empty, RecordsResponse, PopulationRequest, PopulationResponse, NumberOfCitiesRequest, NumberOfCitiesResponse, NumberOfCountriesRequest, NumberOfCountriesResponse, NumberOfCountriesMaxRequest, NumberOfCountriesMaxResponse};
 
 use tonic::Code;
 use tonic::{transport::Server, Request, Response, Status};
@@ -169,6 +169,47 @@ impl StatMethods for StatServer {
         }; 
 
         let response = NumberOfCountriesResponse{
+            result: result_count,
+        };
+
+        Ok(Response::new(response))
+    }
+
+    async fn get_number_of_countries_max(&self, request: Request<NumberOfCountriesMaxRequest>) -> Result<Response<NumberOfCountriesMaxResponse>, Status>{
+        println!("[INFO] Request to get number of countries with a minimum population");
+
+        // Connect to the db or return error
+        let connection = match Connection::open(&"db/city_database.db"){
+            Ok(val) => val,
+            Err(_) => {
+                println!("[ERROR] Could not connect to SQLite DB");
+                return Err(Status::new(Code::Internal, "Internal server error"))
+            },
+        };
+
+        // Retrieve country name from request
+        let citycount: &i32 = &request.get_ref().citycount;
+        let min_population: &i32 = &request.get_ref().min;
+        let max_population: &i32 = &request.get_ref().max;
+        
+        // No need to query if the request is not good
+        if citycount <= &0 || min_population <= &0 || max_population <= &0 {
+            return Err(Status::new(Code::Internal, "Internal server error"))
+        }
+
+        // Query for collecting all 
+        let query = "SELECT COUNT(*) FROM (SELECT COUNT(*) as citycount, MIN([Population]) as min, MAX([Population]) as max FROM cities GROUP BY [Country name EN] HAVING citycount > ?1 and min > ?2 and max < ?3)";
+
+        // Execute the query
+        let result_count: i32 = match connection.query_row(&query, [citycount, min_population, max_population], |r| r.get(0)) {
+            Ok(count) => count,
+            Err(_) => {
+                println!("[ERROR] Failed to execute query");
+                return Err(Status::new(Code::Internal, "Internal server error"))
+            }
+        }; 
+
+        let response = NumberOfCountriesMaxResponse{
             result: result_count,
         };
 

@@ -14,6 +14,9 @@ service StatMethods{
 
     // Method for getting the number of countries with x amount of cities and over a minimum population
     rpc GetNumberOfCountries (NumberOfCountriesRequest) returns (NumberOfCountriesResponse);
+
+    // --- || -- and below max
+    rpc GetNumberOfCountriesMax (NumberOfCountriesMaxRequest) returns (NumberOfCountriesMaxResponse);
 }
 
 
@@ -51,5 +54,15 @@ message NumberOfCountriesRequest{
 }
 
 message NumberOfCountriesResponse{
+    int32 result = 1; 
+}
+
+message NumberOfCountriesMaxRequest{
+    int32 citycount = 1;
+    int32 min = 2; 
+    int32 max = 3;
+}
+
+message NumberOfCountriesMaxResponse{
     int32 result = 1; 
 }
