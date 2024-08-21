@@ -1,9 +1,9 @@
 use std::net::SocketAddr;
 
-use rusqlite::{params, Connection};
+use rusqlite::Connection;
 
 use stat_service::stat_methods_server::{StatMethods, StatMethodsServer};
-use stat_service::{Empty, RecordsResponse, PopulationRequest, PopulationResponse};
+use stat_service::{Empty, RecordsResponse, PopulationRequest, PopulationResponse, NumberOfCitiesRequest, NumberOfCitiesResponse};
 
 use tonic::Code;
 use tonic::{transport::Server, Request, Response, Status};
@@ -26,7 +26,7 @@ impl StatMethods for StatServer {
             Ok(val) => val,
             Err(_) => {
                 println!("[ERROR] Could not connect to SQLite DB");
-                return Err(Status::new(tonic::Code::from_i32(500), "Internal server error"))
+                return Err(Status::new(tonic::Code::Internal, "Internal server error"))
             },
         };
 
@@ -59,41 +59,77 @@ impl StatMethods for StatServer {
             Ok(val) => val,
             Err(_) => {
                 println!("[ERROR] Could not connect to SQLite DB");
-                return Err(Status::new(Code::from_i32(500), "Internal server error"))
+                return Err(Status::new(Code::Internal, "Internal server error"))
             },
         };
 
-        // Retrieve country name from request metadata
-        let country_name = match request.metadata().get("country") {
-            Some(val) => match val.to_str() {
-                Ok(name) => name,
-                Err(_) => {
-                    println!("[ERROR] Invalid country name format in request metadata");
-                    return Err(Status::new(Code::InvalidArgument, "Invalid country name format"));
-                },
-            },
-            None => {
-                println!("[ERROR] 'country' metadata key not found in request");
-                return Err(Status::new(Code::InvalidArgument, "'country' metadata key not found"));
-            },
-        };
+        // Retrieve country name from request
+        let country_name = &request.get_ref().country;
+        if country_name.is_empty(){
+            println!("[ERROR] Given country was empty");
+            return Err(Status::new(Code::InvalidArgument, "Empty country given"))
+        }
 
-        // Query for counting 
         // Prepare the SQL query
         let query_statement = "SELECT SUM(Population) FROM cities WHERE [Country name EN] = ?1";
 
         // Execute the query
-        let population_count: i32 = match connection.query_row(query_statement, &[country_name], |r| r.get(0)) {
+        let population_count: i32 = match connection.query_row(query_statement, [country_name], |r| r.get(0)) {
             Ok(count) => count,
             Err(_) => {
                 println!("[ERROR] Failed to execute query");
-                return Err(Status::new(tonic::Code::from_i32(500), "Internal server error"))
+                return Err(Status::new(tonic::Code::Internal, "Internal server error"))
             }
         };  
 
-
+        
+        // Create a response object 
         let response = PopulationResponse{
             population: population_count,
+        };
+
+        Ok(Response::new(response))
+    }
+
+
+    async fn get_number_of_cities(&self, request: Request<NumberOfCitiesRequest>) -> Result<Response<NumberOfCitiesResponse>, Status>{
+        // Logging request
+        println!("[INFO] Request to get number of cities with a minimum population");
+
+        // Connect to the db or return error
+        let connection = match Connection::open(&"db/city_database.db"){
+            Ok(val) => val,
+            Err(_) => {
+                println!("[ERROR] Could not connect to SQLite DB");
+                return Err(Status::new(Code::Internal, "Internal server error"))
+            },
+        };
+
+        // Retrieve country name from request
+        let country_name = &request.get_ref().country;
+        if country_name.is_empty(){
+            println!("[ERROR] Given country was empty");
+            return Err(Status::new(Code::InvalidArgument, "Empty country given"))
+        }
+
+        // Retrieve minimum amount from request
+        let min = &request.get_ref().min;
+
+        // Prepare the SQL query
+        let query_statement = "SELECT COUNT(*) FROM cities WHERE [Country name EN] = ?1 AND [Population] > ?2";
+
+        // Execute the query
+        let city_count: i32 = match connection.query_row(query_statement, [country_name, &min.to_string()], |r| r.get(0)) {
+            Ok(count) => count,
+            Err(_) => {
+                println!("[ERROR] Failed to execute query");
+                return Err(Status::new(Code::Internal, "Internal server error"))
+            }
+        };  
+
+        // Create response 
+        let response = NumberOfCitiesResponse{
+            number_of_cities: city_count,
         };
 
         Ok(Response::new(response))

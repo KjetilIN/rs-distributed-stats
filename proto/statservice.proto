@@ -8,9 +8,10 @@ service StatMethods{
 
     // Method for getting the population of a given country
     rpc GetPopulationOfCountry (PopulationRequest) returns (PopulationResponse);
+
+    // Method for getting the number of cities in a given country with population over a minimum number
+    rpc GetNumberOfCities (NumberOfCitiesRequest) returns (NumberOfCitiesResponse);
 }
-
-
 
 
 // Defining messages
@@ -30,4 +31,13 @@ message PopulationRequest{
 
 message PopulationResponse{
     int32 population = 1; 
+}
+
+message NumberOfCitiesRequest{
+    string country = 1; 
+    int32 min = 2; 
+}
+
+message NumberOfCitiesResponse{
+    int32 number_of_cities = 1; 
 }
