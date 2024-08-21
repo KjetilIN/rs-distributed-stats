@@ -5,18 +5,29 @@ package statservice;
 service StatMethods{
     // Method for counting data 
     rpc GetRecordsCount (Empty) returns (RecordsResponse);  
+
+    // Method for getting the population of a given country
+    rpc GetPopulationOfCountry (PopulationRequest) returns (PopulationResponse);
 }
 
 
 
 
 // Defining messages
-
 message Empty{
 
 }
 
 message RecordsResponse {
-    // Reply contains the greeting message
     int32 records = 1;
+}
+
+
+message PopulationRequest{
+    // Name of the country
+    string country = 1;  
+}
+
+message PopulationResponse{
+    int32 population = 1; 
 }
