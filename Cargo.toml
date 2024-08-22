@@ -9,6 +9,10 @@ edition = "2021"
 name = "server"
 path = "src/server.rs"
 
+[[bin]] # Bin to run the client binary
+name = "client"
+path = "src/client.rs"
+
 
 [dependencies]
 rusqlite = "0.32.1"
