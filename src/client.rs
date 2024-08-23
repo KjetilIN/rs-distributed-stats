@@ -56,7 +56,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 // Get variables from the line
                 assert!(inputs.len() == 3);
                 let country_name = inputs[1];
-                let zone = inputs[2].parse::<i32>()?;
+                let zone = inputs[2].chars().last().unwrap().to_digit(10).unwrap();
 
                 // Build the request to the server
                 let mut request = Request::new(PopulationRequest {
@@ -94,7 +94,7 @@ XX ms, waiting time: XX ms, processed by Server 1)", country_name, zone, populat
                 assert!(inputs.len() == 4);
                 let country_name = inputs[1];
                 let min = inputs[2].parse::<i32>()?;
-                let zone = inputs[3].parse::<i32>()?;
+                let zone = inputs[3].chars().last().unwrap().to_digit(10).unwrap();
 
                 // Build the request to the server
                 let mut request = Request::new(NumberOfCitiesRequest {
@@ -132,7 +132,7 @@ XX ms, waiting time: XX ms, processed by Server 1)", country_name, min, number_o
                 assert!(inputs.len() == 4);
                 let citycount = inputs[1].parse::<i32>()?;
                 let min = inputs[2].parse::<i32>()?;
-                let zone = inputs[3].parse::<i32>()?;
+                let zone = inputs[3].chars().last().unwrap().to_digit(10).unwrap();
                 
                 let mut request = Request::new(NumberOfCountriesRequest {
                     citycount,
@@ -170,7 +170,7 @@ XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, result, tur
                 let citycount = inputs[1].parse::<i32>()?;
                 let min = inputs[2].parse::<i32>()?;
                 let max = inputs[3].parse::<i32>()?;
-                let zone = inputs[4].parse::<i32>()?;
+                let zone = inputs[4].chars().last().unwrap().to_digit(10).unwrap();
                 
                 let mut request = Request::new(NumberOfCountriesMaxRequest {
                     citycount,
