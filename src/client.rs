@@ -1,3 +1,4 @@
+use std::sync::Arc;
 use std::time::Instant;
 use std::{env, fs::File, io::Read};
 
@@ -7,6 +8,7 @@ use stat_service::{
     NumberOfCountriesMaxResponse, NumberOfCountriesRequest, NumberOfCountriesResponse,
     PopulationRequest, PopulationResponse,
 };
+use tokio::sync::Semaphore;
 use tonic::metadata::MetadataValue;
 use tonic::{Request, Response, Status};
 
@@ -14,9 +16,9 @@ pub mod stat_service {
     tonic::include_proto!("statservice");
 }
 
-async fn handle_get_population_of_country_request(
+async fn create_client_and_get_population_of_country(
     client_zone: i32,
-    inputs: Vec<&str>,
+    inputs: Vec<String>,
     server_addr: String,
 ) -> Result<(), Status> {
     // Connect to server:
@@ -29,7 +31,7 @@ async fn handle_get_population_of_country_request(
     };
     // Get variables from the line
     assert!(inputs.len() == 3);
-    let country_name = inputs[1];
+    let country_name = inputs[1].clone();
     let zone = inputs[2].chars().last().unwrap().to_digit(10).unwrap();
 
     // Build the request to the server
@@ -66,9 +68,9 @@ XX ms, waiting time: XX ms, processed by Server 1)", country_name, zone, populat
     Ok(())
 }
 
-async fn handle_get_number_of_cities_request(
+async fn create_client_and_get_number_of_cities(
     client_zone: i32,
-    inputs: Vec<&str>,
+    inputs: Vec<String>,
     server_addr: String,
 ) -> Result<(), Status> {
     // Connect to server:
@@ -82,7 +84,7 @@ async fn handle_get_number_of_cities_request(
 
     // Get variables
     assert!(inputs.len() == 4);
-    let country_name = inputs[1];
+    let country_name = inputs[1].clone();
     let min = match inputs[2].parse::<i32>() {
         Ok(val) => val,
         Err(_) => {
@@ -127,9 +129,9 @@ XX ms, waiting time: XX ms, processed by Server 1)", country_name, min, number_o
     Ok(())
 }
 
-async fn handle_get_number_of_countries_request(
+async fn create_client_and_get_number_of_countries(
     client_zone: i32,
-    inputs: Vec<&str>,
+    inputs: Vec<String>,
     server_addr: String,
 ) -> Result<(), Status> {
     // Connect to server:
@@ -191,9 +193,9 @@ XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, result, tur
     Ok(())
 }
 
-async fn handle_get_number_of_countries_max_request(
+async fn create_client_and_get_number_of_countries_max(
     client_zone: i32,
-    inputs: Vec<&str>,
+    inputs: Vec<String>,
     server_addr: String,
 ) -> Result<(), Status> {
     // Connect to server:
@@ -290,6 +292,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut contents = String::new();
     file.read_to_string(&mut contents)?;
 
+    let contents = Arc::new(contents);
+
     // Process the file contents
     println!(
         "[INFO] Client (ZONE:{}) started with file: {}",
@@ -299,42 +303,55 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Connect to the server
     let addr = "http://127.0.0.1:50051";
 
-    for line in contents.lines() {
-        let inputs: Vec<&str> = line.split(" ").into_iter().collect();
+    // Create X amount of threads to simulate new clients connecting and doing a task 
+    // Semaphore is created with a limited amount of permits allowed 
+    let semaphore = Arc::new(Semaphore::new(10));
+
+    let lines: Vec<String> = contents.lines().map(|s| s.to_string()).collect();
+
+    for line in lines {
+        let inputs: Vec<String> = line.split_whitespace().map(|s| s.to_string()).collect();
         if inputs.len() < 3 {
             println!("[ERR] Client found line with illegal values: {} ", line);
             continue;
         }
-        let func_name = inputs[0];
+        let func_name = inputs[0].clone();
+        let permit = semaphore.clone().acquire_owned().await.unwrap(); 
 
-        // Send requests based on the different function types
-        match func_name {
-            "getPopulationofCountry" => {
-                let _ =
-                    handle_get_population_of_country_request(client_zone, inputs, addr.to_string())
+        tokio::spawn(async move{
+            // Send requests based on the different function types
+            match func_name.as_str() {
+                "getPopulationofCountry" => {
+                    let _ =
+                        create_client_and_get_population_of_country(client_zone, inputs, addr.to_string())
+                            .await;
+                }
+                "getNumberofCities" => {
+                    let _ = create_client_and_get_number_of_cities(client_zone, inputs, addr.to_string())
                         .await;
-            }
-            "getNumberofCities" => {
-                let _ = handle_get_number_of_cities_request(client_zone, inputs, addr.to_string())
+                }
+                "getNumberofCountries" => {
+                    let _ =
+                        create_client_and_get_number_of_countries(client_zone, inputs, addr.to_string())
+                            .await;
+                }
+                "getNumberofCountriesMax" => {
+                    let _ = create_client_and_get_number_of_countries_max(
+                        client_zone,
+                        inputs,
+                        addr.to_string(),
+                    )
                     .await;
+                }
+                unknown => {
+                    println!("[ERROR] Unknown function name: {unknown}")
+                }
             }
-            "getNumberofCountries" => {
-                let _ =
-                    handle_get_number_of_countries_request(client_zone, inputs, addr.to_string())
-                        .await;
-            }
-            "getNumberofCountriesMax" => {
-                let _ = handle_get_number_of_countries_max_request(
-                    client_zone,
-                    inputs,
-                    addr.to_string(),
-                )
-                .await;
-            }
-            unknown => {
-                println!("[ERROR] Unknown function name: {unknown}")
-            }
-        }
+
+            // Drop the permit 
+            drop(permit);
+        });
+        
     }
 
     Ok(())
