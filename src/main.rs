@@ -1,6 +1,6 @@
 pub mod client;
 pub mod server;
 
-fn main() {
-    println!("Hello, world!");
-}
+
+// NOTE: See readme.md for how to run the server and client binaries. 
+fn main() {}

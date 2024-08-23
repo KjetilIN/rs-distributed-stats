@@ -1,6 +1,11 @@
+use std::error::Error;
+use std::fs::OpenOptions;
+use std::path::Path;
+use std::process::exit;
 use std::sync::Arc;
 use std::time::Instant;
 use std::{env, fs::File, io::Read};
+use csv::WriterBuilder;
 
 use stat_service::stat_methods_client::StatMethodsClient;
 use stat_service::{
@@ -65,6 +70,12 @@ async fn create_client_and_get_population_of_country(
     // TODO: Get execution time from the server as metadata
 
     let population: i32 = response.get_ref().population;
+
+    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
+    if !write_res.is_ok(){
+        println!("[ERROR] Was not able to write to file");
+        return Err(Status::internal("Unable to write to client file"))
+    }
 
     // Print the result
     println!("[INFO] getPopulationofCountry {} {}, Population {}, (turnaround time: {} ms, execution time:
@@ -131,6 +142,13 @@ async fn create_client_and_get_number_of_cities(
     // TODO: Get execution time from the server as metadata
 
     let number_of_cities: i32 = response.get_ref().number_of_cities;
+
+    // Write to the clients log. 
+    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
+    if !write_res.is_ok(){
+        println!("[ERROR] Was not able to write to file");
+        return Err(Status::internal("Unable to write to client file"))
+    }
 
     // Print the result
     println!("[INFO] getNumberofCities for {} min: {}, Number of cities: {}, (turnaround time: {} ms, execution time:
@@ -200,6 +218,12 @@ async fn create_client_and_get_number_of_countries(
     // TODO: Get execution time from the server as metadata
 
     let result: i32 = response.get_ref().result;
+
+    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
+    if !write_res.is_ok(){
+        println!("[ERROR] Was not able to write to file");
+        return Err(Status::internal("Unable to write to client file"))
+    }
 
     // Print the result
     println!("[INFO] getNumberofCountries with citycount: {} min: {}, Result: {}, (turnaround time: {} ms, execution time:
@@ -284,6 +308,12 @@ async fn create_client_and_get_number_of_countries_max(
 
     let result: i32 = response.get_ref().result;
 
+    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
+    if !write_res.is_ok(){
+        println!("[ERROR] Was not able to write to file");
+        return Err(Status::internal("Unable to write to client file"))
+    }
+
     // Print the result
     println!("[INFO] getNumberofCountries with citycount: {} min: {}, max: {} Result: {}, (turnaround time: {} ms, execution time:
 XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, max, result, turnaround_time.as_millis());
@@ -294,13 +324,54 @@ XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, max, result
 /// Write most important statistics to a log file.
 ///
 /// Data such as turn around time, execution and waiting is written to the log file. Also the zone from where the client came from.
-/// The data is written to `/log/client_data_z<ZONE>.cxv`.
+/// The data is written to `/log/client_data_z<ZONE>.csv`.
 async fn write_client_log(
     turn_around_ms: &u128,
     execution_ms: &u128,
-    waiting_ws: &u128,
+    waiting_ms: &u128,
     client_zone: &i32,
-) {
+) -> Result<(), Box<dyn Error>> {
+    // Build the file path based on the client zone
+    let log_dir = "log";
+    let file_name = format!("{}/client_data_z{}.csv", log_dir, client_zone);
+    let path = Path::new(&file_name);
+
+    // Create the directory if it does not exist
+    if let Some(parent) = path.parent() {
+        if !parent.exists() {
+            std::fs::create_dir_all(parent)?;
+        }
+    }
+
+    // Open or create the file
+    let file: File = OpenOptions::new()
+    .create(true)       // Create the file if it does not exist
+    .append(true)       // Open the file in append mode
+    .open(&file_name)?;
+
+    // Create a CSV writer
+    let mut wtr = WriterBuilder::new().has_headers(false).from_writer(file);
+
+    // Write the record to the CSV file
+    wtr.write_record(&[
+        turn_around_ms.to_string(),
+        execution_ms.to_string(),
+        waiting_ms.to_string(),
+    ])?;
+
+    // Ensure all data is written to disk
+    wtr.flush()?;
+
+    Ok(())
+}
+
+
+/// Clean a log file for given client. 
+/// 
+/// Called before writing to the log file. 
+/// Cleans the file with the following name: `/log/client_data_z<ZONE>.csv`.
+/// 
+async fn clean_client_log(client_zone: &i32) -> Result<(), Box<dyn Error>>{
     unimplemented!()
 }
 
@@ -394,7 +465,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             // Drop the permit
             drop(permit);
         });
-    }
+   }
 
     Ok(())
 }
