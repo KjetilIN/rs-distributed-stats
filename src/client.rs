@@ -16,6 +16,11 @@ pub mod stat_service {
     tonic::include_proto!("statservice");
 }
 
+/// Create a connection to given server and sends request.
+///
+/// Sends a gRPC request for getting the population of a given country.
+/// Needs the zone number of the client, vec of inputs and the server address with (with protocol).
+/// Should be used in a thread. Does not crash or panic the program.
 async fn create_client_and_get_population_of_country(
     client_zone: i32,
     inputs: Vec<String>,
@@ -68,6 +73,11 @@ XX ms, waiting time: XX ms, processed by Server 1)", country_name, zone, populat
     Ok(())
 }
 
+/// Create a connection to given server and sends request.
+///
+/// Sends a gRPC request for getting the number of cities within a country where each city has at least the given amount of population.
+/// Needs the zone number of the client, vec of inputs and the server address with (with protocol).
+/// Should be used in a thread. Does not crash or panic the program.
 async fn create_client_and_get_number_of_cities(
     client_zone: i32,
     inputs: Vec<String>,
@@ -129,6 +139,11 @@ XX ms, waiting time: XX ms, processed by Server 1)", country_name, min, number_o
     Ok(())
 }
 
+/// Create a connection to given server and sends request.
+///
+/// Sends a gRPC request for getting the number of countries that has the given amount of cities where each city has a given minimum population.
+/// Needs the zone number of the client, vec of inputs and the server address with (with protocol).
+/// Should be used in a thread. Does not crash or panic the program.
 async fn create_client_and_get_number_of_countries(
     client_zone: i32,
     inputs: Vec<String>,
@@ -193,6 +208,11 @@ XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, result, tur
     Ok(())
 }
 
+/// Create a connection to given server and sends request.
+///
+/// Sends a gRPC request for getting the number of countries that has the given amount of cities where each city has a given minimum population and less than a given maximum population.
+/// Needs the zone number of the client, vec of inputs and the server address with (with protocol).
+/// Should be used in a thread. Does not crash or panic the program.
 async fn create_client_and_get_number_of_countries_max(
     client_zone: i32,
     inputs: Vec<String>,
@@ -271,6 +291,19 @@ XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, max, result
     Ok(())
 }
 
+/// Write most important statistics to a log file.
+///
+/// Data such as turn around time, execution and waiting is written to the log file. Also the zone from where the client came from.
+/// The data is written to `/log/client_data_z<ZONE>.cxv`.
+async fn write_client_log(
+    turn_around_ms: &u128,
+    execution_ms: &u128,
+    waiting_ws: &u128,
+    client_zone: &i32,
+) {
+    unimplemented!()
+}
+
 #[allow(dead_code)]
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -303,8 +336,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Connect to the server
     let addr = "http://127.0.0.1:50051";
 
-    // Create X amount of threads to simulate new clients connecting and doing a task 
-    // Semaphore is created with a limited amount of permits allowed 
+    // Create X amount of threads to simulate new clients connecting and doing a task
+    // Semaphore is created with a limited amount of permits allowed
     let semaphore = Arc::new(Semaphore::new(10));
 
     let lines: Vec<String> = contents.lines().map(|s| s.to_string()).collect();
@@ -316,24 +349,34 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             continue;
         }
         let func_name = inputs[0].clone();
-        let permit = semaphore.clone().acquire_owned().await.unwrap(); 
+        let permit = semaphore.clone().acquire_owned().await.unwrap();
 
-        tokio::spawn(async move{
+        tokio::spawn(async move {
             // Send requests based on the different function types
             match func_name.as_str() {
                 "getPopulationofCountry" => {
-                    let _ =
-                        create_client_and_get_population_of_country(client_zone, inputs, addr.to_string())
-                            .await;
+                    let _ = create_client_and_get_population_of_country(
+                        client_zone,
+                        inputs,
+                        addr.to_string(),
+                    )
+                    .await;
                 }
                 "getNumberofCities" => {
-                    let _ = create_client_and_get_number_of_cities(client_zone, inputs, addr.to_string())
-                        .await;
+                    let _ = create_client_and_get_number_of_cities(
+                        client_zone,
+                        inputs,
+                        addr.to_string(),
+                    )
+                    .await;
                 }
                 "getNumberofCountries" => {
-                    let _ =
-                        create_client_and_get_number_of_countries(client_zone, inputs, addr.to_string())
-                            .await;
+                    let _ = create_client_and_get_number_of_countries(
+                        client_zone,
+                        inputs,
+                        addr.to_string(),
+                    )
+                    .await;
                 }
                 "getNumberofCountriesMax" => {
                     let _ = create_client_and_get_number_of_countries_max(
@@ -348,10 +391,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 }
             }
 
-            // Drop the permit 
+            // Drop the permit
             drop(permit);
         });
-        
     }
 
     Ok(())
