@@ -1,35 +1,31 @@
-# Rust Distributed Service - Statistics Service
+# Rust Distributed Service Simulation - Statistics Service
 
 The system consists of a distributed International Statistics Service. The Application functionality is provided by a remote object residing at the server side. Client objects interact with the server through remote method invocations. The client can invoke the methods defined in the server’s remote interface specification.
+
+> ⚠️ This is a simulation created for educational purposes. There is still unimplemented features, but the goal is to explore complex distributed systems development, and implement features that will improve the performance.
 
 ![image](https://github.com/user-attachments/assets/76cc3c60-2608-4a33-b467-496bb956575d)
 
 
 ## About the simulation
 
-The image above illustartes the simulation. The simulation will be runned on local maschine, and therefore the code contains waits to simulate the network latency. A zone represent a geograhical zone. 
+The image above illustrates the simulation. The simulation will be ran on a local machine, and therefore the code contains waits to simulate the network latency. A zone represent a geographical zone. 
 A request from one zone to another will therefore take more time. The goal of the simulation is to implement a distributed system with Rust, and see the performance of the system. More performance features will be added. 
 
-- 5 servers in 5 diffrents zones.
+- 5 servers in 5 different zones.
 - Each server is placed in a zone.
 - Each zone has a set of clients.
 - For each server, 1000 clients will connect to each server and do a gRPC request.
 - Simulation is done when all 5000 clients has sent their requests.
 
-Each client request has a designated "zone" they want to reach. Orignially they try to request to their own server in their own zone. 
+Each client request has a designated "zone" they want to reach. Originally they try to request to their own server in their own zone. 
 - If the client is in the correct zone, the client will wait `80 ms` (to simulate network latency).
-- If the client is not in the correct zone, the client will wait `170 ms` (to simulate a request to a diffrent zone). 
+- If the client is not in the correct zone, the client will wait `170 ms` (to simulate a request to a different zone). 
 
-
-## Features
-
-- Proxy (load balancing) Server
-- gRPC Server for remote method execution 
-- SQLite database for all data
 
 ## Results 
 
-The following is boxplots of the most important statistics from the simulation: 
+The following is box-plots of the most important statistics from the simulation: 
 
 
 ![Screenshot from 2024-08-24 20-11-04](https://github.com/user-attachments/assets/75edfab8-de78-45b6-94ae-a8f740c2e092)
