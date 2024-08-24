@@ -1,6 +1,7 @@
 use csv::WriterBuilder;
 use std::error::Error;
 use std::fs::OpenOptions;
+use std::io::Write;
 use std::path::Path;
 use std::sync::Arc;
 use std::time::Instant;
@@ -416,7 +417,28 @@ async fn write_client_log(
 /// Called before writing to the log file.
 /// Cleans the file with the following name: `./log/client_data_z<ZONE>.csv`.
 async fn clean_client_log(client_zone: &i32) -> Result<(), Box<dyn Error>> {
-    unimplemented!()
+    // Construct the file path based on the client zone
+    let file_path = format!("./log/client_data_z{}.csv", client_zone);
+
+    // Ensure the directory exists before attempting to open the file
+    let path = Path::new(&file_path);
+    if !path.exists() {
+        return Err("Could not open file".into());
+    }
+
+    // Open the file in write mode, which will truncate it
+    let mut file = OpenOptions::new()
+        .write(true)
+        .truncate(true)
+        .open(&file_path)?;
+
+    // Write an empty string to truncate the file
+    file.write_all(b"")?;
+
+    // Flush the changes to the file
+    file.flush()?;
+
+    Ok(())
 }
 
 #[allow(dead_code)]
@@ -441,6 +463,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     file.read_to_string(&mut contents)?;
 
     let contents = Arc::new(contents);
+
+    // Clean the log file 
+    clean_client_log(&client_zone).await?;
 
     // Process the file contents
     println!(
