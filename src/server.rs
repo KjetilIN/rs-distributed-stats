@@ -1,13 +1,14 @@
 use std::net::SocketAddr;
+use std::time::Instant;
 
 use rusqlite::Connection;
-
 use stat_service::stat_methods_server::{StatMethods, StatMethodsServer};
 use stat_service::{
     Empty, NumberOfCitiesRequest, NumberOfCitiesResponse, NumberOfCountriesMaxRequest,
     NumberOfCountriesMaxResponse, NumberOfCountriesRequest, NumberOfCountriesResponse,
     PopulationRequest, PopulationResponse, RecordsResponse,
 };
+use tonic::metadata::MetadataValue;
 
 use tonic::Code;
 use tonic::{transport::Server, Request, Response, Status};
@@ -27,6 +28,8 @@ impl StatMethods for StatServer {
     ) -> Result<Response<RecordsResponse>, Status> {
         // Logging request
         println!("[INFO] Request to count records..");
+
+        let start = Instant::now();
 
         // Connect to the db or return error
         let connection = match Connection::open(&"db/city_database.db") {
@@ -49,11 +52,19 @@ impl StatMethods for StatServer {
             }
         };
 
-        let response = RecordsResponse {
+        let mut response = Response::new(RecordsResponse {
             records: record_count,
-        };
+        });
 
-        Ok(Response::new(response))
+        // Get the execution time
+        let execution_ms = start.elapsed().as_millis() as u64;
+
+        // Insert execution as metadata
+        response
+            .metadata_mut()
+            .insert("execution", MetadataValue::from(execution_ms));
+
+        Ok(response)
     }
 
     async fn get_population_of_country(
@@ -62,6 +73,8 @@ impl StatMethods for StatServer {
     ) -> Result<Response<PopulationResponse>, Status> {
         // Logging request
         println!("[INFO] Request to get population of the given country");
+
+        let start = Instant::now();
 
         // Connect to the db or return error
         let connection = match Connection::open(&"db/city_database.db") {
@@ -93,11 +106,19 @@ impl StatMethods for StatServer {
             };
 
         // Create a response object
-        let response = PopulationResponse {
+        let mut response = Response::new(PopulationResponse {
             population: population_count,
-        };
+        });
 
-        Ok(Response::new(response))
+        // Get the execution time
+        let execution_ms = start.elapsed().as_millis() as u64;
+
+        // Insert execution as metadata
+        response
+            .metadata_mut()
+            .insert("execution", MetadataValue::from(execution_ms));
+
+        Ok(response)
     }
 
     async fn get_number_of_cities(
@@ -106,6 +127,8 @@ impl StatMethods for StatServer {
     ) -> Result<Response<NumberOfCitiesResponse>, Status> {
         // Logging request
         println!("[INFO] Request to get number of cities with a minimum population");
+
+        let start = Instant::now();
 
         // Connect to the db or return error
         let connection = match Connection::open(&"db/city_database.db") {
@@ -143,11 +166,19 @@ impl StatMethods for StatServer {
             };
 
         // Create response
-        let response = NumberOfCitiesResponse {
+        let mut response = Response::new(NumberOfCitiesResponse {
             number_of_cities: city_count,
-        };
+        });
 
-        Ok(Response::new(response))
+        // Get the execution time
+        let execution_ms = start.elapsed().as_millis() as u64;
+
+        // Insert execution as metadata
+        response
+            .metadata_mut()
+            .insert("execution", MetadataValue::from(execution_ms));
+
+        Ok(response)
     }
 
     async fn get_number_of_countries(
@@ -155,6 +186,9 @@ impl StatMethods for StatServer {
         request: Request<NumberOfCountriesRequest>,
     ) -> Result<Response<NumberOfCountriesResponse>, Status> {
         println!("[INFO] Request to get number of countries with a minimum population");
+
+        // Capture the start time
+        let start = Instant::now();
 
         // Connect to the db or return error
         let connection = match Connection::open(&"db/city_database.db") {
@@ -187,11 +221,21 @@ impl StatMethods for StatServer {
                 }
             };
 
-        let response = NumberOfCountriesResponse {
+        // Create the response
+        let mut response = Response::new(NumberOfCountriesResponse {
             result: result_count,
-        };
+        });
 
-        Ok(Response::new(response))
+        // Get the execution time
+        let execution_ms = start.elapsed().as_millis() as u64;
+
+        // Insert execution as metadata
+        response
+            .metadata_mut()
+            .insert("execution", MetadataValue::from(execution_ms));
+
+        // Return the response
+        Ok(response)
     }
 
     async fn get_number_of_countries_max(
@@ -199,6 +243,8 @@ impl StatMethods for StatServer {
         request: Request<NumberOfCountriesMaxRequest>,
     ) -> Result<Response<NumberOfCountriesMaxResponse>, Status> {
         println!("[INFO] Request to get number of countries with a minimum population");
+
+        let start = Instant::now();
 
         // Connect to the db or return error
         let connection = match Connection::open(&"db/city_database.db") {
@@ -234,11 +280,19 @@ impl StatMethods for StatServer {
                 }
             };
 
-        let response = NumberOfCountriesMaxResponse {
+        let mut response = Response::new(NumberOfCountriesMaxResponse {
             result: result_count,
-        };
+        });
 
-        Ok(Response::new(response))
+        // Get the execution time
+        let execution_ms = start.elapsed().as_millis() as u64;
+
+        // Insert execution as metadata
+        response
+            .metadata_mut()
+            .insert("execution", MetadataValue::from(execution_ms));
+
+        Ok(response)
     }
 }
 

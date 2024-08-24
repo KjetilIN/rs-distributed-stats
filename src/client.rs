@@ -1,11 +1,10 @@
+use csv::WriterBuilder;
 use std::error::Error;
 use std::fs::OpenOptions;
 use std::path::Path;
-use std::process::exit;
 use std::sync::Arc;
 use std::time::Instant;
 use std::{env, fs::File, io::Read};
-use csv::WriterBuilder;
 
 use stat_service::stat_methods_client::StatMethodsClient;
 use stat_service::{
@@ -66,20 +65,31 @@ async fn create_client_and_get_population_of_country(
 
     // Calculate the duration
     let turnaround_time = start.elapsed();
-
-    // TODO: Get execution time from the server as metadata
-
+    let execution_ms = response
+        .metadata()
+        .get("execution")
+        .unwrap()
+        .to_str()
+        .unwrap()
+        .parse::<u64>()
+        .unwrap();
     let population: i32 = response.get_ref().population;
 
-    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
-    if !write_res.is_ok(){
+    let write_res = write_client_log(
+        &turnaround_time.as_millis(),
+        &execution_ms,
+        &0,
+        &client_zone,
+    )
+    .await;
+    if !write_res.is_ok() {
         println!("[ERROR] Was not able to write to file");
-        return Err(Status::internal("Unable to write to client file"))
+        return Err(Status::internal("Unable to write to client file"));
     }
 
     // Print the result
     println!("[INFO] getPopulationofCountry {} {}, Population {}, (turnaround time: {} ms, execution time:
-XX ms, waiting time: XX ms, processed by Server 1)", country_name, zone, population, turnaround_time.as_millis());
+{} ms, waiting time: XX ms, processed by Server 1)", country_name, zone, population, turnaround_time.as_millis(), execution_ms);
 
     Ok(())
 }
@@ -138,21 +148,33 @@ async fn create_client_and_get_number_of_cities(
 
     // Calculate the duration
     let turnaround_time = start.elapsed();
-
-    // TODO: Get execution time from the server as metadata
+    let execution_ms = response
+        .metadata()
+        .get("execution")
+        .unwrap()
+        .to_str()
+        .unwrap()
+        .parse::<u64>()
+        .unwrap();
 
     let number_of_cities: i32 = response.get_ref().number_of_cities;
 
-    // Write to the clients log. 
-    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
-    if !write_res.is_ok(){
+    // Write to the clients log.
+    let write_res = write_client_log(
+        &turnaround_time.as_millis(),
+        &execution_ms,
+        &0,
+        &client_zone,
+    )
+    .await;
+    if !write_res.is_ok() {
         println!("[ERROR] Was not able to write to file");
-        return Err(Status::internal("Unable to write to client file"))
+        return Err(Status::internal("Unable to write to client file"));
     }
 
     // Print the result
     println!("[INFO] getNumberofCities for {} min: {}, Number of cities: {}, (turnaround time: {} ms, execution time:
-XX ms, waiting time: XX ms, processed by Server 1)", country_name, min, number_of_cities, turnaround_time.as_millis());
+{} ms, waiting time: XX ms, processed by Server 1)", country_name, min, number_of_cities, turnaround_time.as_millis(), execution_ms);
 
     Ok(())
 }
@@ -214,20 +236,32 @@ async fn create_client_and_get_number_of_countries(
 
     // Calculate the duration
     let turnaround_time = start.elapsed();
-
-    // TODO: Get execution time from the server as metadata
+    let execution_ms = response
+        .metadata()
+        .get("execution")
+        .unwrap()
+        .to_str()
+        .unwrap()
+        .parse::<u64>()
+        .unwrap();
 
     let result: i32 = response.get_ref().result;
 
-    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
-    if !write_res.is_ok(){
+    let write_res = write_client_log(
+        &turnaround_time.as_millis(),
+        &execution_ms,
+        &0,
+        &client_zone,
+    )
+    .await;
+    if !write_res.is_ok() {
         println!("[ERROR] Was not able to write to file");
-        return Err(Status::internal("Unable to write to client file"))
+        return Err(Status::internal("Unable to write to client file"));
     }
 
     // Print the result
     println!("[INFO] getNumberofCountries with citycount: {} min: {}, Result: {}, (turnaround time: {} ms, execution time:
-XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, result, turnaround_time.as_millis());
+{} ms, waiting time: XX ms, processed by Server 1)", citycount, min, result, turnaround_time.as_millis(), execution_ms);
 
     Ok(())
 }
@@ -303,20 +337,32 @@ async fn create_client_and_get_number_of_countries_max(
 
     // Calculate the duration
     let turnaround_time = start.elapsed();
-
-    // TODO: Get execution time from the server as metadata
+    let execution_ms = response
+        .metadata()
+        .get("execution")
+        .unwrap()
+        .to_str()
+        .unwrap()
+        .parse::<u64>()
+        .unwrap();
 
     let result: i32 = response.get_ref().result;
 
-    let write_res = write_client_log(&turnaround_time.as_millis(), &0, &0, &client_zone).await;
-    if !write_res.is_ok(){
+    let write_res = write_client_log(
+        &turnaround_time.as_millis(),
+        &execution_ms,
+        &0,
+        &client_zone,
+    )
+    .await;
+    if !write_res.is_ok() {
         println!("[ERROR] Was not able to write to file");
-        return Err(Status::internal("Unable to write to client file"))
+        return Err(Status::internal("Unable to write to client file"));
     }
 
     // Print the result
     println!("[INFO] getNumberofCountries with citycount: {} min: {}, max: {} Result: {}, (turnaround time: {} ms, execution time:
-XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, max, result, turnaround_time.as_millis());
+{} ms, waiting time: XX ms, processed by Server 1)", citycount, min, max, result, turnaround_time.as_millis(), execution_ms);
 
     Ok(())
 }
@@ -327,7 +373,7 @@ XX ms, waiting time: XX ms, processed by Server 1)", citycount, min, max, result
 /// The data is written to `/log/client_data_z<ZONE>.csv`.
 async fn write_client_log(
     turn_around_ms: &u128,
-    execution_ms: &u128,
+    execution_ms: &u64,
     waiting_ms: &u128,
     client_zone: &i32,
 ) -> Result<(), Box<dyn Error>> {
@@ -345,9 +391,9 @@ async fn write_client_log(
 
     // Open or create the file
     let file: File = OpenOptions::new()
-    .create(true)       // Create the file if it does not exist
-    .append(true)       // Open the file in append mode
-    .open(&file_name)?;
+        .create(true) // Create the file if it does not exist
+        .append(true) // Open the file in append mode
+        .open(&file_name)?;
 
     // Create a CSV writer
     let mut wtr = WriterBuilder::new().has_headers(false).from_writer(file);
@@ -365,13 +411,11 @@ async fn write_client_log(
     Ok(())
 }
 
-
-/// Clean a log file for given client. 
-/// 
-/// Called before writing to the log file. 
-/// Cleans the file with the following name: `/log/client_data_z<ZONE>.csv`.
-/// 
-async fn clean_client_log(client_zone: &i32) -> Result<(), Box<dyn Error>>{
+/// Clean a log file for given client.
+///
+/// Called before writing to the log file.
+/// Cleans the file with the following name: `./log/client_data_z<ZONE>.csv`.
+async fn clean_client_log(client_zone: &i32) -> Result<(), Box<dyn Error>> {
     unimplemented!()
 }
 
@@ -465,7 +509,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             // Drop the permit
             drop(permit);
         });
-   }
+    }
 
     Ok(())
 }
