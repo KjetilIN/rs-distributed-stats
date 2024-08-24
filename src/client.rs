@@ -64,7 +64,7 @@ async fn create_client_and_get_population_of_country(
     // Get the response
     let response: Response<PopulationResponse> = client.get_population_of_country(request).await?;
 
-    // Calculate the duration
+    // Calculate turn around, execution and wait time
     let turnaround_time = start.elapsed();
     let execution_ms = response
         .metadata()
@@ -74,12 +74,14 @@ async fn create_client_and_get_population_of_country(
         .unwrap()
         .parse::<u64>()
         .unwrap();
+    let waiting_ms: u64 = turnaround_time.as_millis() as u64 - execution_ms;
+
     let population: i32 = response.get_ref().population;
 
     let write_res = write_client_log(
         &turnaround_time.as_millis(),
         &execution_ms,
-        &0,
+        &waiting_ms,
         &client_zone,
     )
     .await;
@@ -90,7 +92,7 @@ async fn create_client_and_get_population_of_country(
 
     // Print the result
     println!("[INFO] getPopulationofCountry {} {}, Population {}, (turnaround time: {} ms, execution time:
-{} ms, waiting time: XX ms, processed by Server 1)", country_name, zone, population, turnaround_time.as_millis(), execution_ms);
+{} ms, waiting time: {} ms, processed by Server 1)", country_name, zone, population, turnaround_time.as_millis(), execution_ms, waiting_ms);
 
     Ok(())
 }
@@ -147,7 +149,7 @@ async fn create_client_and_get_number_of_cities(
     // Get the response
     let response: Response<NumberOfCitiesResponse> = client.get_number_of_cities(request).await?;
 
-    // Calculate the duration
+    // Calculate turn around, execution and wait time
     let turnaround_time = start.elapsed();
     let execution_ms = response
         .metadata()
@@ -157,6 +159,7 @@ async fn create_client_and_get_number_of_cities(
         .unwrap()
         .parse::<u64>()
         .unwrap();
+    let waiting_ms: u64 = turnaround_time.as_millis() as u64 - execution_ms;
 
     let number_of_cities: i32 = response.get_ref().number_of_cities;
 
@@ -164,10 +167,11 @@ async fn create_client_and_get_number_of_cities(
     let write_res = write_client_log(
         &turnaround_time.as_millis(),
         &execution_ms,
-        &0,
+        &waiting_ms,
         &client_zone,
     )
     .await;
+
     if !write_res.is_ok() {
         println!("[ERROR] Was not able to write to file");
         return Err(Status::internal("Unable to write to client file"));
@@ -175,7 +179,7 @@ async fn create_client_and_get_number_of_cities(
 
     // Print the result
     println!("[INFO] getNumberofCities for {} min: {}, Number of cities: {}, (turnaround time: {} ms, execution time:
-{} ms, waiting time: XX ms, processed by Server 1)", country_name, min, number_of_cities, turnaround_time.as_millis(), execution_ms);
+{} ms, waiting time: {} ms, processed by Server 1)", country_name, min, number_of_cities, turnaround_time.as_millis(), execution_ms, waiting_ms);
 
     Ok(())
 }
@@ -235,7 +239,7 @@ async fn create_client_and_get_number_of_countries(
     let response: Response<NumberOfCountriesResponse> =
         client.get_number_of_countries(request).await?;
 
-    // Calculate the duration
+    // Calculate turn around, execution and wait time
     let turnaround_time = start.elapsed();
     let execution_ms = response
         .metadata()
@@ -245,13 +249,14 @@ async fn create_client_and_get_number_of_countries(
         .unwrap()
         .parse::<u64>()
         .unwrap();
+    let waiting_ms: u64 = turnaround_time.as_millis() as u64 - execution_ms;
 
     let result: i32 = response.get_ref().result;
 
     let write_res = write_client_log(
         &turnaround_time.as_millis(),
         &execution_ms,
-        &0,
+        &waiting_ms,
         &client_zone,
     )
     .await;
@@ -262,7 +267,7 @@ async fn create_client_and_get_number_of_countries(
 
     // Print the result
     println!("[INFO] getNumberofCountries with citycount: {} min: {}, Result: {}, (turnaround time: {} ms, execution time:
-{} ms, waiting time: XX ms, processed by Server 1)", citycount, min, result, turnaround_time.as_millis(), execution_ms);
+{} ms, waiting time: {} ms, processed by Server 1)", citycount, min, result, turnaround_time.as_millis(), execution_ms, waiting_ms);
 
     Ok(())
 }
@@ -336,7 +341,7 @@ async fn create_client_and_get_number_of_countries_max(
     let response: Response<NumberOfCountriesMaxResponse> =
         client.get_number_of_countries_max(request).await?;
 
-    // Calculate the duration
+    // Calculate turn around, execution and wait time
     let turnaround_time = start.elapsed();
     let execution_ms = response
         .metadata()
@@ -346,16 +351,18 @@ async fn create_client_and_get_number_of_countries_max(
         .unwrap()
         .parse::<u64>()
         .unwrap();
+    let waiting_ms: u64 = turnaround_time.as_millis() as u64 - execution_ms;
 
     let result: i32 = response.get_ref().result;
 
     let write_res = write_client_log(
         &turnaround_time.as_millis(),
         &execution_ms,
-        &0,
+        &waiting_ms,
         &client_zone,
     )
     .await;
+
     if !write_res.is_ok() {
         println!("[ERROR] Was not able to write to file");
         return Err(Status::internal("Unable to write to client file"));
@@ -363,7 +370,7 @@ async fn create_client_and_get_number_of_countries_max(
 
     // Print the result
     println!("[INFO] getNumberofCountries with citycount: {} min: {}, max: {} Result: {}, (turnaround time: {} ms, execution time:
-{} ms, waiting time: XX ms, processed by Server 1)", citycount, min, max, result, turnaround_time.as_millis(), execution_ms);
+{} ms, waiting time: {} ms, processed by Server 1)", citycount, min, max, result, turnaround_time.as_millis(), execution_ms, waiting_ms);
 
     Ok(())
 }
@@ -375,7 +382,7 @@ async fn create_client_and_get_number_of_countries_max(
 async fn write_client_log(
     turn_around_ms: &u128,
     execution_ms: &u64,
-    waiting_ms: &u128,
+    waiting_ms: &u64,
     client_zone: &i32,
 ) -> Result<(), Box<dyn Error>> {
     // Build the file path based on the client zone
@@ -464,7 +471,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let contents = Arc::new(contents);
 
-    // Clean the log file 
+    // Clean the log file
     clean_client_log(&client_zone).await?;
 
     // Process the file contents
