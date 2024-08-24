@@ -1,3 +1,4 @@
+use std::env;
 use std::net::SocketAddr;
 use std::time::Instant;
 
@@ -299,8 +300,19 @@ impl StatMethods for StatServer {
 #[allow(dead_code)]
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let addr = "127.0.0.1:50051".parse::<SocketAddr>()?;
+    // Parse the command-line arguments
+    let args: Vec<String> = env::args().collect();
+    if args.len() != 2 {
+        eprintln!("Usage: {} <Server ID>", args[0]);
+        return Ok(());
+    }
+    let server_id = &args[1].parse::<u32>()?;
 
+    // Creating serer addr
+    let addr = format!("127.0.0.1:5{}000", server_id);
+    let server_addr = addr.parse::<SocketAddr>()?;
+
+    // Server creation 
     let server: StatServer = StatServer::default();
 
     // Logging that the server has started
@@ -308,7 +320,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     Server::builder()
         .add_service(StatMethodsServer::new(server))
-        .serve(addr)
+        .serve(server_addr)
         .await?;
 
     Ok(())

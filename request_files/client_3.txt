@@ -1,1000 +1,1000 @@
-getNumberofCountriesMax 2 105376 2957466 Zone:1
-getNumberofCountries 8 1388983 Zone:2
-getNumberofCountriesMax 8 1955280 584347 Zone:2
-getNumberofCities Egypt 3481016 Zone:1
-getNumberofCountriesMax 7 3620558 892017 Zone:5
-getNumberofCountriesMax 8 7240711 4644778 Zone:5
-getPopulationofCountry Canada Zone:4
-getNumberofCountries 4 1213727 Zone:5
-getNumberofCountries 6 6754495 Zone:5
-getPopulationofCountry Canada Zone:4
-getNumberofCountries 5 489225 Zone:4
+getNumberofCities Israel 4164158 Zone:3
 getPopulationofCountry Australia Zone:4
-getNumberofCountries 2 6980072 Zone:3
-getNumberofCountries 1 6167981 Zone:1
+getNumberofCountriesMax 4 9898078 2588769 Zone:4
+getNumberofCountriesMax 8 480781 6196328 Zone:2
+getNumberofCities Belgium 1488781 Zone:3
+getNumberofCountriesMax 8 515397 7228523 Zone:3
+getNumberofCountries 2 8578495 Zone:2
+getPopulationofCountry Egypt Zone:1
+getNumberofCountries 1 3673347 Zone:2
+getNumberofCities Germany 3530375 Zone:4
+getNumberofCities Sweden 2987887 Zone:5
+getNumberofCountries 10 3018916 Zone:4
+getNumberofCountries 4 6769270 Zone:4
+getNumberofCountries 3 6487833 Zone:1
+getNumberofCountries 1 1872287 Zone:3
+getNumberofCountriesMax 3 9978005 7035375 Zone:3
+getNumberofCities Germany 8206297 Zone:1
+getNumberofCountries 4 4914609 Zone:1
+getNumberofCountries 5 3891736 Zone:3
+getNumberofCountriesMax 3 8527456 2572591 Zone:4
+getNumberofCities Israel 8546094 Zone:5
+getNumberofCities Switzerland 3419486 Zone:1
+getPopulationofCountry Canada Zone:1
 getPopulationofCountry Germany Zone:5
-getNumberofCountriesMax 2 4655821 4581404 Zone:3
-getPopulationofCountry Germany Zone:3
-getNumberofCountries 7 1116217 Zone:5
-getNumberofCountries 7 1164954 Zone:3
-getNumberofCountriesMax 5 1955657 897375 Zone:3
-getPopulationofCountry Switzerland Zone:3
-getNumberofCountries 6 4754170 Zone:2
-getNumberofCountriesMax 9 537294 104580 Zone:2
-getNumberofCities Australia 9622966 Zone:4
-getNumberofCountries 5 3154960 Zone:3
-getPopulationofCountry Canada Zone:2
-getNumberofCountriesMax 10 2015490 6445602 Zone:4
-getNumberofCountriesMax 8 7610686 6913472 Zone:2
-getNumberofCountriesMax 7 5848570 1815884 Zone:2
-getNumberofCountriesMax 3 5227726 4754519 Zone:5
-getNumberofCountries 8 7146743 Zone:1
-getNumberofCountriesMax 5 4236491 5965860 Zone:1
-getNumberofCities Australia 9439113 Zone:2
-getNumberofCities Belgium 8520574 Zone:1
-getPopulationofCountry Israel Zone:5
-getNumberofCities Belgium 2919901 Zone:5
-getPopulationofCountry Australia Zone:4
-getNumberofCountries 2 5250114 Zone:4
-getNumberofCountries 6 3866171 Zone:4
-getNumberofCities Norway 4425613 Zone:3
-getNumberofCities Israel 3595630 Zone:3
-getNumberofCountriesMax 6 1898787 2169478 Zone:3
-getNumberofCities Germany 3887959 Zone:4
-getPopulationofCountry Belgium Zone:2
-getNumberofCities Israel 5366756 Zone:3
-getNumberofCountriesMax 9 3230707 3681555 Zone:3
-getNumberofCountries 7 1882089 Zone:2
-getNumberofCountriesMax 2 8418547 2490207 Zone:4
-getNumberofCountriesMax 5 6000017 6806796 Zone:5
-getNumberofCities Australia 5217299 Zone:5
-getNumberofCities Switzerland 6177405 Zone:3
-getNumberofCountries 7 2905665 Zone:4
-getNumberofCountriesMax 1 2705672 9142820 Zone:4
-getNumberofCountriesMax 3 3055928 216644 Zone:4
-getPopulationofCountry Sweden Zone:1
-getPopulationofCountry Canada Zone:1
-getNumberofCities Egypt 2925742 Zone:3
-getNumberofCountries 7 6558788 Zone:4
-getNumberofCountries 9 6535330 Zone:1
-getNumberofCountries 7 793810 Zone:3
-getNumberofCountriesMax 7 8270336 9700900 Zone:2
-getNumberofCountries 8 3266638 Zone:2
-getNumberofCountries 10 2143177 Zone:2
-getNumberofCountries 6 4880165 Zone:3
-getNumberofCountries 9 9551078 Zone:3
-getNumberofCountriesMax 4 1326488 6211118 Zone:1
-getNumberofCountries 1 4149644 Zone:4
-getNumberofCities Israel 7424465 Zone:2
-getPopulationofCountry Australia Zone:2
-getNumberofCountriesMax 4 3152913 8890936 Zone:3
-getPopulationofCountry Israel Zone:3
-getNumberofCountriesMax 5 4618493 9429952 Zone:2
-getNumberofCountries 9 5745101 Zone:3
-getNumberofCountries 1 6395666 Zone:4
-getNumberofCountriesMax 3 4041261 8353193 Zone:2
-getNumberofCities Norway 2185150 Zone:3
-getNumberofCountries 6 3428416 Zone:5
-getNumberofCountriesMax 2 4849674 4261910 Zone:1
-getNumberofCities Norway 1084690 Zone:4
-getPopulationofCountry Canada Zone:5
-getNumberofCountries 10 1903424 Zone:4
-getNumberofCountriesMax 2 2315243 503185 Zone:3
-getNumberofCountriesMax 7 9332645 8664325 Zone:1
-getNumberofCountries 7 1696132 Zone:3
-getNumberofCities Canada 9221658 Zone:1
-getPopulationofCountry Switzerland Zone:4
-getPopulationofCountry Egypt Zone:2
-getNumberofCountriesMax 7 7830783 9926817 Zone:2
-getNumberofCountries 5 145944 Zone:4
-getPopulationofCountry Germany Zone:3
-getNumberofCountriesMax 9 9983744 1229856 Zone:1
-getNumberofCountries 9 1676417 Zone:1
-getNumberofCountries 6 5179794 Zone:4
-getPopulationofCountry Canada Zone:3
-getNumberofCities Belgium 5345776 Zone:3
-getNumberofCities Belgium 9679663 Zone:5
-getNumberofCountriesMax 8 2929031 2344254 Zone:3
-getPopulationofCountry Switzerland Zone:1
-getNumberofCities Norway 597005 Zone:3
-getPopulationofCountry Belgium Zone:3
-getNumberofCountriesMax 10 4922668 8063384 Zone:1
-getNumberofCities Switzerland 7733994 Zone:2
-getNumberofCities Netherlands 6989179 Zone:2
-getNumberofCities Australia 7583633 Zone:3
-getNumberofCountries 6 4794460 Zone:3
-getPopulationofCountry Egypt Zone:1
-getPopulationofCountry Canada Zone:2
-getNumberofCountriesMax 8 9903694 556351 Zone:4
-getNumberofCountries 1 5516798 Zone:3
-getNumberofCountries 4 5388018 Zone:2
-getPopulationofCountry Egypt Zone:4
-getNumberofCountries 8 1529277 Zone:2
-getNumberofCountriesMax 5 785457 236945 Zone:5
-getNumberofCities Belgium 2872435 Zone:2
-getNumberofCities Switzerland 7106968 Zone:1
-getNumberofCountriesMax 6 9866245 4499189 Zone:5
-getNumberofCountries 7 5138482 Zone:1
-getNumberofCities Netherlands 4713266 Zone:1
-getNumberofCountriesMax 9 2037006 3709251 Zone:5
-getNumberofCountriesMax 7 5272686 1204849 Zone:5
-getNumberofCities Belgium 1134841 Zone:4
-getNumberofCities Belgium 9371388 Zone:2
-getPopulationofCountry Egypt Zone:1
-getNumberofCities Egypt 494871 Zone:1
-getNumberofCities Netherlands 391978 Zone:5
-getPopulationofCountry Netherlands Zone:4
-getNumberofCountries 2 6685339 Zone:2
-getNumberofCountries 3 8799882 Zone:2
-getNumberofCountriesMax 6 9229927 8807168 Zone:3
-getPopulationofCountry Israel Zone:5
-getPopulationofCountry Egypt Zone:3
-getPopulationofCountry Canada Zone:2
-getPopulationofCountry Australia Zone:2
-getPopulationofCountry Sweden Zone:4
-getPopulationofCountry Belgium Zone:5
-getPopulationofCountry Canada Zone:5
-getNumberofCountriesMax 10 4676187 4950116 Zone:3
-getPopulationofCountry Belgium Zone:1
-getPopulationofCountry Norway Zone:4
-getNumberofCities Belgium 1271597 Zone:2
-getNumberofCountries 2 5898143 Zone:5
-getPopulationofCountry Norway Zone:5
-getNumberofCities Egypt 6901797 Zone:4
-getNumberofCities Netherlands 7849537 Zone:1
-getNumberofCountries 8 7661116 Zone:4
-getNumberofCountries 1 7579239 Zone:3
-getNumberofCountries 9 423636 Zone:4
-getPopulationofCountry Israel Zone:4
-getNumberofCountriesMax 8 8530408 7435267 Zone:4
-getNumberofCountriesMax 1 5687270 8005931 Zone:4
-getNumberofCountriesMax 3 3463047 373866 Zone:5
-getNumberofCountriesMax 3 8925289 7918198 Zone:5
-getNumberofCountries 10 2606915 Zone:1
-getNumberofCountriesMax 5 8421140 3429894 Zone:2
-getNumberofCities Norway 6017133 Zone:1
-getNumberofCities Netherlands 3250011 Zone:2
-getNumberofCities Canada 885014 Zone:4
-getPopulationofCountry Israel Zone:2
-getNumberofCountries 1 8299966 Zone:3
-getNumberofCountries 3 4312828 Zone:3
-getNumberofCountriesMax 6 5969103 1696233 Zone:3
-getPopulationofCountry Switzerland Zone:2
-getNumberofCountries 10 9666429 Zone:1
-getNumberofCountriesMax 3 592378 2737922 Zone:5
-getPopulationofCountry Canada Zone:4
-getPopulationofCountry Norway Zone:2
-getNumberofCountries 2 255558 Zone:4
-getNumberofCountriesMax 4 9857494 346121 Zone:2
-getPopulationofCountry Switzerland Zone:4
-getNumberofCities Egypt 3129763 Zone:3
-getPopulationofCountry Norway Zone:2
-getNumberofCountriesMax 3 1341297 842353 Zone:3
-getNumberofCities Australia 9481573 Zone:1
-getPopulationofCountry Egypt Zone:1
-getNumberofCountriesMax 9 4028899 2729000 Zone:1
-getNumberofCountries 9 9698024 Zone:4
-getNumberofCountries 2 3196896 Zone:3
-getPopulationofCountry Canada Zone:2
-getNumberofCities Netherlands 4114010 Zone:2
-getPopulationofCountry Germany Zone:2
-getNumberofCountriesMax 10 340114 1305841 Zone:3
-getPopulationofCountry Israel Zone:1
-getPopulationofCountry Sweden Zone:4
-getNumberofCountries 1 3773862 Zone:5
-getNumberofCountries 10 5273067 Zone:5
-getNumberofCountriesMax 3 8110402 670686 Zone:1
-getNumberofCities Belgium 972140 Zone:5
-getPopulationofCountry Israel Zone:4
-getNumberofCountriesMax 6 3900979 3643425 Zone:2
-getNumberofCountries 1 9903577 Zone:5
-getNumberofCountriesMax 7 6717785 8154540 Zone:5
-getNumberofCountries 3 2461672 Zone:1
-getNumberofCountries 7 3966309 Zone:2
-getNumberofCountriesMax 3 9944820 3252194 Zone:1
-getNumberofCountriesMax 9 3718885 2700236 Zone:3
-getNumberofCities Germany 7743123 Zone:3
-getNumberofCountries 7 6792985 Zone:4
-getNumberofCountries 1 1406077 Zone:1
-getNumberofCountries 10 1139692 Zone:5
-getNumberofCountriesMax 3 8266234 9752032 Zone:3
-getNumberofCountries 7 1870781 Zone:5
-getPopulationofCountry Canada Zone:5
-getNumberofCountriesMax 9 6426501 7838255 Zone:2
-getNumberofCities Norway 3245521 Zone:3
-getNumberofCities Netherlands 7177222 Zone:3
-getNumberofCountries 4 3229343 Zone:4
-getNumberofCountriesMax 5 2274793 2289323 Zone:3
-getPopulationofCountry Israel Zone:2
-getPopulationofCountry Switzerland Zone:3
-getPopulationofCountry Germany Zone:3
-getNumberofCities Sweden 6691638 Zone:4
-getPopulationofCountry Canada Zone:5
-getNumberofCities Canada 2990640 Zone:4
-getPopulationofCountry Canada Zone:5
-getPopulationofCountry Norway Zone:3
-getNumberofCountries 2 2152964 Zone:4
-getNumberofCities Israel 8728558 Zone:3
-getNumberofCountriesMax 6 651204 5207765 Zone:5
-getNumberofCountries 9 510226 Zone:3
-getNumberofCities Belgium 5507367 Zone:5
-getPopulationofCountry Israel Zone:1
-getNumberofCountriesMax 3 1257064 4511029 Zone:2
-getNumberofCities Israel 4196245 Zone:3
-getNumberofCities Australia 8348772 Zone:3
-getPopulationofCountry Sweden Zone:3
-getNumberofCountriesMax 10 932292 6468022 Zone:4
-getNumberofCountriesMax 1 2377372 4912020 Zone:4
-getNumberofCities Switzerland 3716708 Zone:3
-getNumberofCities Switzerland 8055802 Zone:5
-getNumberofCities Australia 8499116 Zone:4
-getPopulationofCountry Israel Zone:4
-getNumberofCities Norway 7442126 Zone:3
-getNumberofCountriesMax 3 2921744 4537810 Zone:2
-getPopulationofCountry Sweden Zone:3
-getNumberofCities Switzerland 2740495 Zone:3
-getPopulationofCountry Canada Zone:2
-getNumberofCountries 4 7492920 Zone:5
-getNumberofCountries 6 7225530 Zone:5
-getNumberofCountries 1 232574 Zone:2
-getPopulationofCountry Switzerland Zone:5
-getNumberofCities Sweden 7344321 Zone:3
-getNumberofCities Germany 5699580 Zone:1
-getNumberofCountriesMax 7 9930319 5549176 Zone:5
-getNumberofCountriesMax 10 2454211 5684218 Zone:1
-getNumberofCities Egypt 477944 Zone:3
-getNumberofCountriesMax 7 5074052 2952348 Zone:5
-getNumberofCountries 7 4178815 Zone:5
-getPopulationofCountry Sweden Zone:1
-getNumberofCities Belgium 5445812 Zone:5
-getNumberofCities Germany 4710357 Zone:2
-getNumberofCountriesMax 5 2708726 7230857 Zone:4
-getNumberofCities Egypt 3748265 Zone:5
-getNumberofCountriesMax 6 6524963 8512044 Zone:4
-getNumberofCountries 3 8337776 Zone:5
-getNumberofCities Germany 9324923 Zone:3
-getNumberofCountries 4 7533224 Zone:4
-getNumberofCountries 3 9479653 Zone:4
-getPopulationofCountry Sweden Zone:1
-getPopulationofCountry Australia Zone:1
-getNumberofCities Canada 5160070 Zone:5
-getNumberofCities Israel 2438981 Zone:4
-getNumberofCountries 7 4704259 Zone:4
-getNumberofCountries 7 1451668 Zone:3
-getPopulationofCountry Australia Zone:1
-getNumberofCountries 8 9878795 Zone:5
-getNumberofCities Netherlands 4714446 Zone:3
-getNumberofCountries 8 3278359 Zone:1
-getNumberofCountries 8 3007402 Zone:3
-getNumberofCities Switzerland 5683709 Zone:5
-getNumberofCities Netherlands 6816423 Zone:3
-getNumberofCities Norway 7014035 Zone:1
-getNumberofCountriesMax 2 6126679 8295238 Zone:1
-getNumberofCountries 6 1969640 Zone:2
-getNumberofCountriesMax 9 5398687 8805154 Zone:4
-getNumberofCountriesMax 1 6308746 3042764 Zone:2
-getNumberofCountriesMax 1 8162244 759050 Zone:4
-getNumberofCities Belgium 8274883 Zone:5
-getNumberofCountriesMax 4 7095905 7455619 Zone:4
-getNumberofCountriesMax 2 8601041 2672208 Zone:1
-getNumberofCountries 9 393505 Zone:5
-getNumberofCountries 1 4249410 Zone:4
-getNumberofCountries 7 2987756 Zone:1
-getPopulationofCountry Sweden Zone:2
-getNumberofCountriesMax 5 932701 3357510 Zone:2
-getNumberofCountriesMax 8 6961185 9035589 Zone:4
-getNumberofCountriesMax 3 9518679 2056009 Zone:1
-getNumberofCities Norway 4455159 Zone:2
-getNumberofCountriesMax 6 1965893 3469257 Zone:5
-getPopulationofCountry Netherlands Zone:4
-getNumberofCities Canada 5833649 Zone:5
-getNumberofCities Switzerland 7753698 Zone:2
-getNumberofCountries 1 6093872 Zone:3
-getPopulationofCountry Canada Zone:4
-getNumberofCities Germany 9491386 Zone:1
-getNumberofCountriesMax 2 5824926 1437461 Zone:2
-getNumberofCountries 10 8530831 Zone:4
-getNumberofCountries 8 9952529 Zone:2
-getNumberofCities Netherlands 1196492 Zone:2
-getNumberofCountries 5 8223368 Zone:5
-getPopulationofCountry Norway Zone:4
-getNumberofCountries 3 5446048 Zone:1
-getNumberofCountries 1 8169159 Zone:5
-getNumberofCountries 7 6517555 Zone:1
-getNumberofCountries 9 204663 Zone:4
-getNumberofCities Israel 2198344 Zone:2
-getPopulationofCountry Germany Zone:2
-getNumberofCountriesMax 9 3601047 5987655 Zone:4
-getNumberofCities Australia 4674330 Zone:3
-getNumberofCities Canada 3027240 Zone:2
-getNumberofCities Australia 5176638 Zone:3
-getNumberofCountries 1 5561666 Zone:4
-getPopulationofCountry Germany Zone:2
-getNumberofCountries 3 5851499 Zone:3
-getPopulationofCountry Germany Zone:3
-getNumberofCountries 3 9004542 Zone:5
-getPopulationofCountry Israel Zone:2
-getNumberofCities Switzerland 9333285 Zone:2
-getNumberofCountriesMax 1 3572486 7804565 Zone:4
-getNumberofCities Sweden 8082550 Zone:2
-getNumberofCities Switzerland 2720100 Zone:2
-getNumberofCities Egypt 307314 Zone:5
-getNumberofCountriesMax 7 8058338 7364273 Zone:4
-getPopulationofCountry Australia Zone:2
-getNumberofCities Sweden 2924012 Zone:4
-getNumberofCountries 1 404017 Zone:2
-getNumberofCities Australia 5918751 Zone:1
-getNumberofCountries 3 8152851 Zone:4
-getNumberofCountries 10 5125890 Zone:5
-getPopulationofCountry Netherlands Zone:1
-getNumberofCountries 4 8767763 Zone:2
-getNumberofCities Norway 6682702 Zone:5
-getNumberofCountriesMax 3 3964628 3011723 Zone:4
-getPopulationofCountry Sweden Zone:1
-getNumberofCities Germany 8660842 Zone:4
-getNumberofCities Australia 5337139 Zone:5
-getNumberofCities Australia 5372513 Zone:3
-getNumberofCountries 9 9873502 Zone:5
-getNumberofCountries 8 6791229 Zone:5
-getPopulationofCountry Germany Zone:1
-getNumberofCountriesMax 3 2677021 1361178 Zone:3
-getNumberofCountriesMax 6 5226905 4504082 Zone:1
-getPopulationofCountry Israel Zone:4
-getPopulationofCountry Netherlands Zone:4
-getPopulationofCountry Norway Zone:2
-getPopulationofCountry Australia Zone:3
-getNumberofCountries 3 5655325 Zone:1
-getNumberofCountries 8 1521869 Zone:3
-getNumberofCountriesMax 2 6742726 4264303 Zone:4
-getNumberofCountriesMax 7 9138894 1241260 Zone:5
-getNumberofCountriesMax 5 8082162 7825237 Zone:2
-getNumberofCities Israel 7141820 Zone:2
-getNumberofCities Netherlands 7116260 Zone:2
-getPopulationofCountry Norway Zone:4
-getNumberofCountries 7 2184518 Zone:3
-getPopulationofCountry Belgium Zone:3
-getPopulationofCountry Switzerland Zone:5
-getPopulationofCountry Israel Zone:5
-getNumberofCountries 10 2452301 Zone:4
-getNumberofCountriesMax 4 9668625 8585466 Zone:4
-getNumberofCountries 7 4515399 Zone:2
-getNumberofCities Canada 9083296 Zone:5
-getNumberofCountriesMax 10 939506 3231243 Zone:2
-getPopulationofCountry Switzerland Zone:2
-getNumberofCountriesMax 1 1058409 6171951 Zone:2
-getNumberofCountries 4 6831995 Zone:4
-getNumberofCountries 8 9416873 Zone:4
-getNumberofCities Canada 4447005 Zone:5
-getPopulationofCountry Belgium Zone:2
-getPopulationofCountry Israel Zone:2
-getNumberofCountriesMax 9 3100709 5972341 Zone:4
-getNumberofCities Switzerland 6217246 Zone:3
-getNumberofCountriesMax 7 1982538 9588265 Zone:4
-getNumberofCountries 5 4947161 Zone:4
-getNumberofCities Israel 4370196 Zone:2
-getNumberofCities Australia 5416672 Zone:2
-getNumberofCountriesMax 6 9046304 5374258 Zone:4
-getPopulationofCountry Sweden Zone:2
-getNumberofCities Belgium 960246 Zone:5
-getNumberofCities Belgium 3285647 Zone:2
-getNumberofCountries 4 1075009 Zone:1
-getNumberofCities Australia 6021093 Zone:4
-getPopulationofCountry Egypt Zone:3
-getPopulationofCountry Sweden Zone:1
-getPopulationofCountry Norway Zone:1
-getPopulationofCountry Sweden Zone:2
-getNumberofCountriesMax 2 2576213 4940100 Zone:5
-getPopulationofCountry Norway Zone:1
-getNumberofCities Canada 8238843 Zone:4
-getNumberofCities Australia 7677994 Zone:4
-getNumberofCountries 8 4170161 Zone:2
-getNumberofCities Germany 4468153 Zone:5
-getPopulationofCountry Netherlands Zone:1
-getNumberofCountriesMax 7 6174589 631949 Zone:1
-getPopulationofCountry Belgium Zone:1
-getNumberofCities Australia 5402513 Zone:1
-getNumberofCountries 2 9393830 Zone:2
-getNumberofCountries 9 3972943 Zone:2
-getNumberofCountries 7 4681073 Zone:1
-getPopulationofCountry Norway Zone:3
-getNumberofCities Israel 9966127 Zone:4
-getNumberofCities Sweden 5663676 Zone:5
-getPopulationofCountry Israel Zone:2
-getNumberofCities Sweden 9885735 Zone:1
-getNumberofCountriesMax 8 3180815 7447158 Zone:3
-getNumberofCities Norway 7613379 Zone:3
-getPopulationofCountry Australia Zone:3
-getNumberofCountries 1 7388653 Zone:1
-getNumberofCountriesMax 3 8765834 9607517 Zone:1
-getNumberofCities Netherlands 8747094 Zone:2
-getPopulationofCountry Belgium Zone:4
-getNumberofCities Belgium 7992608 Zone:5
-getNumberofCountries 6 4967000 Zone:3
-getNumberofCities Netherlands 7064895 Zone:3
-getNumberofCountries 10 7764847 Zone:4
-getPopulationofCountry Norway Zone:4
-getNumberofCountries 4 787624 Zone:4
-getNumberofCities Sweden 2380310 Zone:5
-getNumberofCountriesMax 4 9969780 9568650 Zone:1
-getPopulationofCountry Sweden Zone:3
-getNumberofCountries 6 7348961 Zone:2
-getNumberofCities Israel 2191180 Zone:3
-getNumberofCountries 4 3347423 Zone:1
-getNumberofCountriesMax 6 1291882 7175238 Zone:1
-getPopulationofCountry Switzerland Zone:3
-getNumberofCountries 6 925706 Zone:1
-getNumberofCountriesMax 8 1424965 3487485 Zone:4
-getNumberofCountriesMax 10 3786839 5841798 Zone:1
-getNumberofCountriesMax 5 6375498 7789312 Zone:3
-getNumberofCities Egypt 7786463 Zone:4
-getNumberofCities Belgium 8040269 Zone:2
-getNumberofCountriesMax 4 2446248 412056 Zone:2
-getNumberofCities Sweden 9136030 Zone:3
-getNumberofCountries 3 868128 Zone:5
-getNumberofCities Norway 357936 Zone:2
-getNumberofCities Norway 4115257 Zone:2
-getPopulationofCountry Norway Zone:5
-getPopulationofCountry Germany Zone:1
-getPopulationofCountry Norway Zone:1
-getPopulationofCountry Sweden Zone:5
-getNumberofCountries 7 868104 Zone:3
-getNumberofCities Germany 9424501 Zone:3
-getNumberofCities Israel 5743283 Zone:2
-getNumberofCities Germany 6556474 Zone:5
-getNumberofCountries 10 705392 Zone:1
-getNumberofCountriesMax 2 2426844 7373543 Zone:3
-getNumberofCountries 9 7030283 Zone:1
-getNumberofCountriesMax 2 1351618 584957 Zone:5
-getPopulationofCountry Belgium Zone:1
-getNumberofCountries 3 1212641 Zone:3
-getNumberofCities Norway 1852293 Zone:2
-getNumberofCountries 5 4144583 Zone:3
-getPopulationofCountry Germany Zone:3
-getNumberofCountries 10 5209591 Zone:1
-getPopulationofCountry Netherlands Zone:1
-getPopulationofCountry Israel Zone:2
-getNumberofCountries 10 7805355 Zone:5
-getNumberofCountries 5 576098 Zone:3
-getNumberofCountries 4 4135831 Zone:4
-getNumberofCountriesMax 1 4693865 9367845 Zone:5
-getPopulationofCountry Israel Zone:2
-getNumberofCities Netherlands 4351859 Zone:3
-getPopulationofCountry Norway Zone:1
-getNumberofCountries 8 3618820 Zone:4
-getPopulationofCountry Egypt Zone:3
-getPopulationofCountry Sweden Zone:2
-getNumberofCities Germany 9082724 Zone:5
-getPopulationofCountry Switzerland Zone:2
-getNumberofCountries 6 8482725 Zone:3
-getPopulationofCountry Belgium Zone:4
-getNumberofCities Australia 6099838 Zone:3
-getPopulationofCountry Australia Zone:4
-getNumberofCities Australia 8807250 Zone:5
-getNumberofCountries 1 7539306 Zone:3
-getNumberofCountriesMax 7 3181949 2856744 Zone:1
-getPopulationofCountry Belgium Zone:5
-getPopulationofCountry Israel Zone:1
-getNumberofCountriesMax 1 5057071 9799551 Zone:1
-getNumberofCities Norway 219289 Zone:3
-getNumberofCountriesMax 4 2146403 3314699 Zone:1
-getNumberofCities Canada 5920931 Zone:5
-getNumberofCities Canada 2336499 Zone:3
-getPopulationofCountry Canada Zone:5
-getNumberofCountries 6 6309470 Zone:4
-getPopulationofCountry Israel Zone:3
-getPopulationofCountry Switzerland Zone:1
-getPopulationofCountry Egypt Zone:4
-getNumberofCountries 9 9895791 Zone:3
-getNumberofCountriesMax 8 6862354 590167 Zone:1
-getNumberofCountriesMax 7 4199425 4243415 Zone:1
-getNumberofCountries 5 7933695 Zone:4
-getNumberofCities Sweden 8074900 Zone:2
-getNumberofCountriesMax 2 1657013 5505038 Zone:3
-getNumberofCities Canada 2684986 Zone:4
-getNumberofCountries 6 6169829 Zone:4
-getNumberofCountriesMax 10 2416201 4212304 Zone:2
-getPopulationofCountry Canada Zone:2
-getNumberofCountries 6 9107439 Zone:2
-getNumberofCountries 3 9403550 Zone:3
-getNumberofCountriesMax 5 7758436 3793306 Zone:5
-getNumberofCities Egypt 1076898 Zone:1
-getNumberofCities Israel 1094615 Zone:4
-getNumberofCountries 8 4412850 Zone:3
-getNumberofCountries 2 6217234 Zone:4
-getNumberofCountries 8 7636388 Zone:4
-getPopulationofCountry Switzerland Zone:1
-getNumberofCountriesMax 4 2312488 4722803 Zone:1
-getNumberofCountriesMax 1 3696667 1831854 Zone:1
-getNumberofCities Germany 337491 Zone:4
-getNumberofCountries 9 5986924 Zone:5
-getNumberofCountriesMax 2 1703095 4011747 Zone:5
-getPopulationofCountry Egypt Zone:4
+getNumberofCountriesMax 7 3699413 3478086 Zone:4
+getNumberofCities Australia 6444824 Zone:5
+getNumberofCountriesMax 7 6143257 5149854 Zone:4
+getNumberofCountriesMax 7 495052 6097562 Zone:1
+getNumberofCountriesMax 4 980708 517376 Zone:1
+getNumberofCities Netherlands 8334965 Zone:5
 getPopulationofCountry Australia Zone:5
-getNumberofCities Belgium 925638 Zone:4
-getNumberofCities Israel 4502283 Zone:2
-getNumberofCountries 7 1051030 Zone:2
-getPopulationofCountry Belgium Zone:2
-getNumberofCities Australia 1080329 Zone:3
-getNumberofCities Canada 6563178 Zone:3
-getPopulationofCountry Netherlands Zone:2
-getPopulationofCountry Egypt Zone:5
-getPopulationofCountry Norway Zone:2
-getNumberofCountriesMax 8 6486982 7727951 Zone:4
-getPopulationofCountry Canada Zone:2
-getPopulationofCountry Netherlands Zone:2
-getNumberofCities Egypt 6924737 Zone:2
-getNumberofCountries 3 2128167 Zone:4
-getNumberofCountriesMax 3 6566371 6766000 Zone:4
-getNumberofCountriesMax 7 3353351 6455333 Zone:5
-getNumberofCountriesMax 4 4918687 7039057 Zone:4
-getNumberofCountries 7 3955730 Zone:2
-getNumberofCities Egypt 7414113 Zone:1
-getPopulationofCountry Egypt Zone:4
 getPopulationofCountry Germany Zone:4
-getNumberofCountriesMax 7 9170261 2074588 Zone:3
-getPopulationofCountry Australia Zone:1
-getPopulationofCountry Netherlands Zone:3
-getPopulationofCountry Belgium Zone:4
-getNumberofCountriesMax 8 2088964 9627752 Zone:2
-getNumberofCountriesMax 7 1761480 3598400 Zone:2
-getNumberofCountriesMax 5 7711855 7561806 Zone:1
-getPopulationofCountry Germany Zone:5
-getNumberofCountries 9 9244587 Zone:1
-getNumberofCities Canada 2661678 Zone:1
-getNumberofCities Sweden 9326442 Zone:5
-getPopulationofCountry Canada Zone:3
-getNumberofCities Sweden 6007411 Zone:3
-getPopulationofCountry Canada Zone:2
-getNumberofCities Germany 4554766 Zone:2
-getNumberofCountries 9 2010960 Zone:3
-getNumberofCountriesMax 8 1109962 4495651 Zone:4
-getNumberofCountriesMax 1 8677563 166603 Zone:3
-getNumberofCountries 7 778484 Zone:2
-getNumberofCountriesMax 9 9167965 9800881 Zone:4
-getNumberofCountries 4 7314060 Zone:3
-getNumberofCountries 2 8891315 Zone:1
-getNumberofCountriesMax 6 3586963 2275594 Zone:5
-getNumberofCountriesMax 2 4724753 2611088 Zone:4
+getNumberofCities Germany 5206443 Zone:4
+getNumberofCities Canada 5862787 Zone:1
+getPopulationofCountry Sweden Zone:5
+getNumberofCities Canada 1546294 Zone:2
+getNumberofCountriesMax 1 5671465 9173662 Zone:2
+getNumberofCountries 5 5913225 Zone:5
+getNumberofCountries 5 3451950 Zone:5
+getPopulationofCountry Germany Zone:3
+getNumberofCountriesMax 2 2608754 8252124 Zone:2
+getPopulationofCountry Canada Zone:5
 getPopulationofCountry Egypt Zone:1
-getNumberofCities Egypt 9428075 Zone:3
-getNumberofCountriesMax 6 7515036 5226662 Zone:1
-getNumberofCountries 8 5270767 Zone:5
-getPopulationofCountry Egypt Zone:3
-getNumberofCities Norway 218947 Zone:5
-getNumberofCountries 10 2827711 Zone:2
-getPopulationofCountry Netherlands Zone:1
-getPopulationofCountry Belgium Zone:4
-getNumberofCities Norway 3621750 Zone:4
-getNumberofCities Belgium 7662644 Zone:3
-getNumberofCountries 7 2990810 Zone:4
-getNumberofCountriesMax 2 3515127 2682507 Zone:2
-getNumberofCities Canada 2314601 Zone:1
-getNumberofCountriesMax 9 3923234 3191898 Zone:3
-getNumberofCities Canada 5432798 Zone:2
-getPopulationofCountry Belgium Zone:5
-getPopulationofCountry Germany Zone:3
-getNumberofCountriesMax 9 4171429 8244934 Zone:2
-getNumberofCountries 4 3493509 Zone:1
-getPopulationofCountry Israel Zone:4
-getNumberofCountries 7 4060953 Zone:4
-getNumberofCountries 8 4480475 Zone:1
-getPopulationofCountry Germany Zone:3
-getNumberofCities Norway 1200711 Zone:1
-getNumberofCountries 5 4341340 Zone:3
-getNumberofCities Belgium 3260833 Zone:1
+getNumberofCountries 5 2624678 Zone:3
+getNumberofCountriesMax 9 6544187 1597501 Zone:5
+getNumberofCities Belgium 4503430 Zone:2
+getNumberofCountriesMax 1 106437 7051382 Zone:4
+getNumberofCountries 10 9074411 Zone:5
+getNumberofCities Norway 3692917 Zone:4
+getNumberofCities Canada 2743849 Zone:2
+getNumberofCountries 4 5301046 Zone:5
 getPopulationofCountry Sweden Zone:2
-getNumberofCountriesMax 4 5793108 3527481 Zone:1
-getNumberofCities Norway 399456 Zone:2
-getNumberofCities Israel 825087 Zone:2
-getNumberofCities Egypt 6116302 Zone:5
-getPopulationofCountry Egypt Zone:2
-getNumberofCountries 3 6475220 Zone:5
-getPopulationofCountry Australia Zone:3
-getNumberofCountriesMax 3 4858902 6951976 Zone:2
-getNumberofCountriesMax 6 4949676 4303022 Zone:2
-getNumberofCountries 9 4000470 Zone:4
-getNumberofCities Norway 2677577 Zone:3
-getNumberofCities Canada 2744207 Zone:4
-getNumberofCountries 2 5447783 Zone:3
-getPopulationofCountry Egypt Zone:3
-getPopulationofCountry Germany Zone:3
-getNumberofCountriesMax 2 600567 2696802 Zone:3
-getNumberofCities Australia 1264598 Zone:1
-getNumberofCountriesMax 8 7641394 1182958 Zone:2
-getNumberofCountries 5 2094558 Zone:2
-getNumberofCountriesMax 6 4102632 7077525 Zone:5
-getNumberofCountriesMax 8 9321163 7914808 Zone:2
-getNumberofCountriesMax 7 6491336 5011629 Zone:2
-getNumberofCountries 10 5763826 Zone:5
-getPopulationofCountry Netherlands Zone:3
-getPopulationofCountry Canada Zone:2
-getNumberofCountriesMax 9 6998397 4904608 Zone:2
-getNumberofCities Israel 5476222 Zone:5
-getNumberofCountriesMax 4 3005698 3159970 Zone:5
-getNumberofCountries 8 8342980 Zone:4
-getNumberofCountriesMax 4 109290 3146357 Zone:1
-getNumberofCountries 10 2272211 Zone:4
-getNumberofCities Switzerland 5952318 Zone:4
-getNumberofCities Israel 6446553 Zone:4
-getPopulationofCountry Canada Zone:5
-getPopulationofCountry Australia Zone:4
-getNumberofCities Belgium 835967 Zone:5
-getNumberofCountries 7 9052764 Zone:4
-getNumberofCountries 1 5105038 Zone:4
-getNumberofCountries 8 5917892 Zone:5
-getNumberofCountries 1 5682275 Zone:4
-getNumberofCountries 5 1674285 Zone:2
-getNumberofCities Belgium 7758457 Zone:2
-getNumberofCountriesMax 4 4119527 6364254 Zone:3
-getNumberofCountriesMax 10 345959 1723162 Zone:3
-getNumberofCountries 9 7285856 Zone:2
-getNumberofCities Israel 4939672 Zone:3
-getPopulationofCountry Sweden Zone:5
-getNumberofCities Egypt 1056488 Zone:5
-getNumberofCities Israel 1159548 Zone:1
+getNumberofCities Australia 9748816 Zone:2
+getNumberofCountriesMax 4 1441319 423062 Zone:2
 getPopulationofCountry Belgium Zone:1
-getNumberofCountries 8 7806477 Zone:2
-getNumberofCities Egypt 7712544 Zone:2
-getPopulationofCountry Sweden Zone:3
-getPopulationofCountry Germany Zone:3
-getNumberofCountries 4 5402977 Zone:5
-getNumberofCountriesMax 4 8960916 2660016 Zone:5
-getNumberofCountriesMax 5 2147354 1844756 Zone:1
-getNumberofCountriesMax 3 9085845 8229812 Zone:3
-getPopulationofCountry Netherlands Zone:3
-getNumberofCountries 5 181564 Zone:5
-getNumberofCountriesMax 9 6204602 2752286 Zone:5
-getNumberofCountriesMax 6 5624887 9804662 Zone:1
-getNumberofCountries 3 7112738 Zone:1
-getNumberofCities Australia 1289443 Zone:1
-getNumberofCountries 8 6096517 Zone:1
-getNumberofCities Canada 4692667 Zone:2
-getPopulationofCountry Israel Zone:5
-getNumberofCountriesMax 1 8481276 8573285 Zone:3
-getPopulationofCountry Netherlands Zone:2
-getNumberofCountriesMax 5 3662004 1641635 Zone:2
-getPopulationofCountry Germany Zone:1
-getPopulationofCountry Germany Zone:4
-getPopulationofCountry Sweden Zone:3
-getNumberofCities Norway 4500123 Zone:4
-getNumberofCountriesMax 5 7651412 2941377 Zone:1
-getNumberofCountries 10 4015040 Zone:3
-getPopulationofCountry Switzerland Zone:2
-getNumberofCountries 10 7275015 Zone:5
-getNumberofCountries 2 4584025 Zone:2
-getNumberofCountriesMax 7 9125828 7430842 Zone:5
-getNumberofCountriesMax 4 6969952 2451541 Zone:4
-getNumberofCountriesMax 1 799024 2683386 Zone:1
-getNumberofCountriesMax 8 3868413 2721728 Zone:4
-getPopulationofCountry Israel Zone:2
-getNumberofCities Canada 9792183 Zone:1
-getNumberofCities Netherlands 2049252 Zone:5
-getNumberofCountriesMax 5 2741087 802731 Zone:2
-getPopulationofCountry Switzerland Zone:4
-getNumberofCountries 6 1821337 Zone:1
-getNumberofCountries 6 5252532 Zone:4
-getPopulationofCountry Switzerland Zone:4
-getNumberofCountriesMax 4 1849350 9568029 Zone:4
-getNumberofCountriesMax 1 5653118 826969 Zone:2
-getNumberofCountriesMax 8 3678710 798481 Zone:3
-getNumberofCountries 10 7471180 Zone:5
-getNumberofCountriesMax 10 1545006 9866747 Zone:4
-getNumberofCountries 4 830906 Zone:3
-getNumberofCountriesMax 4 7828544 8560339 Zone:3
-getNumberofCountriesMax 7 4954996 9338003 Zone:5
-getNumberofCities Egypt 4561899 Zone:4
-getPopulationofCountry Egypt Zone:2
-getNumberofCountriesMax 1 4065807 6835195 Zone:5
-getPopulationofCountry Australia Zone:1
-getNumberofCountriesMax 2 261013 6762332 Zone:4
-getNumberofCities Australia 631297 Zone:3
-getNumberofCities Switzerland 6654511 Zone:3
-getNumberofCities Egypt 4447379 Zone:2
-getNumberofCities Australia 5963528 Zone:1
-getNumberofCities Switzerland 5081480 Zone:5
-getNumberofCountries 8 7405934 Zone:3
-getNumberofCountries 9 7279768 Zone:5
-getNumberofCountries 3 5013186 Zone:2
-getNumberofCountries 8 8109853 Zone:2
-getNumberofCountriesMax 4 6978059 9326157 Zone:4
-getNumberofCountries 2 6711929 Zone:2
-getNumberofCities Sweden 6462562 Zone:4
-getNumberofCountriesMax 10 6757474 2972014 Zone:1
-getPopulationofCountry Egypt Zone:2
-getNumberofCountries 3 5095543 Zone:5
-getPopulationofCountry Norway Zone:4
-getNumberofCountries 4 878884 Zone:3
-getNumberofCountriesMax 7 4986583 2714163 Zone:2
-getNumberofCountries 7 9398621 Zone:4
-getPopulationofCountry Germany Zone:3
-getNumberofCountriesMax 6 1789117 4730058 Zone:5
-getNumberofCountries 3 290891 Zone:5
-getNumberofCountries 6 8470437 Zone:1
-getNumberofCountries 7 9658514 Zone:1
-getNumberofCities Netherlands 9960248 Zone:2
-getNumberofCities Switzerland 5563794 Zone:2
-getNumberofCountriesMax 4 4463764 3790786 Zone:1
-getNumberofCountries 1 7250428 Zone:2
-getNumberofCountriesMax 7 5197267 1346958 Zone:1
-getNumberofCountriesMax 5 2967821 603029 Zone:3
-getNumberofCountriesMax 1 4500959 9121734 Zone:4
-getNumberofCities Israel 1144576 Zone:2
-getNumberofCountriesMax 8 9931436 1867260 Zone:5
-getNumberofCountriesMax 9 1808911 1946680 Zone:1
-getNumberofCountries 8 9678116 Zone:3
-getNumberofCountriesMax 4 6828875 9744605 Zone:3
-getNumberofCities Australia 3111947 Zone:2
-getNumberofCountries 6 3302993 Zone:4
-getNumberofCountries 3 4993416 Zone:3
-getPopulationofCountry Canada Zone:1
-getPopulationofCountry Canada Zone:5
-getPopulationofCountry Sweden Zone:5
-getNumberofCountries 8 2305673 Zone:2
-getNumberofCountries 1 9979236 Zone:5
-getNumberofCities Australia 1606669 Zone:2
-getPopulationofCountry Sweden Zone:3
-getNumberofCountries 1 6063017 Zone:5
-getNumberofCities Egypt 3145617 Zone:5
-getNumberofCountries 2 8061699 Zone:2
-getNumberofCities Canada 7211492 Zone:3
-getNumberofCountries 10 8543152 Zone:3
-getNumberofCities Canada 2906796 Zone:5
-getNumberofCities Switzerland 1476609 Zone:4
-getNumberofCountriesMax 3 9270404 7178990 Zone:3
-getNumberofCountries 8 7374705 Zone:3
-getPopulationofCountry Belgium Zone:3
-getPopulationofCountry Israel Zone:3
-getPopulationofCountry Sweden Zone:4
-getNumberofCountriesMax 4 4865999 6738068 Zone:1
-getNumberofCountries 2 759663 Zone:1
-getPopulationofCountry Egypt Zone:2
-getNumberofCountries 4 6105798 Zone:2
-getPopulationofCountry Egypt Zone:5
-getNumberofCountries 3 6853413 Zone:3
-getNumberofCountries 2 7123977 Zone:3
-getNumberofCountriesMax 1 8864917 1660404 Zone:4
-getPopulationofCountry Germany Zone:3
-getNumberofCountries 8 402250 Zone:2
-getNumberofCountries 1 756114 Zone:3
-getPopulationofCountry Israel Zone:4
-getNumberofCities Canada 2631048 Zone:5
-getNumberofCountriesMax 2 5958775 913968 Zone:3
-getNumberofCountries 6 305250 Zone:5
-getNumberofCountriesMax 6 1721677 5779810 Zone:5
-getNumberofCountriesMax 7 9214839 6370236 Zone:4
-getPopulationofCountry Israel Zone:1
-getNumberofCountriesMax 10 2611571 3496225 Zone:1
-getNumberofCountries 3 1317039 Zone:2
-getNumberofCountries 7 7757793 Zone:5
-getNumberofCities Germany 8145180 Zone:1
-getPopulationofCountry Egypt Zone:2
-getNumberofCities Germany 4744344 Zone:3
-getNumberofCities Sweden 5672294 Zone:3
-getNumberofCountries 1 7638813 Zone:1
-getNumberofCities Sweden 8043750 Zone:4
-getNumberofCities Germany 676473 Zone:5
-getNumberofCountries 2 2380312 Zone:2
-getPopulationofCountry Norway Zone:3
-getNumberofCities Sweden 4034677 Zone:5
-getNumberofCountries 10 7272219 Zone:1
-getNumberofCountries 4 7479694 Zone:3
+getNumberofCountriesMax 5 6753648 4122150 Zone:2
+getPopulationofCountry Australia Zone:2
+getPopulationofCountry Netherlands Zone:4
+getPopulationofCountry Belgium Zone:4
+getNumberofCountries 4 8950138 Zone:1
+getNumberofCountries 1 8244938 Zone:3
+getNumberofCountries 2 4470519 Zone:3
+getNumberofCountries 9 1757400 Zone:3
 getPopulationofCountry Australia Zone:5
-getNumberofCountriesMax 4 2368292 7220832 Zone:2
-getNumberofCities Germany 622463 Zone:5
-getNumberofCities Egypt 3199559 Zone:3
-getNumberofCities Switzerland 3612451 Zone:1
-getNumberofCountriesMax 1 6005389 5875778 Zone:3
-getNumberofCountriesMax 8 693776 2549483 Zone:3
-getNumberofCountries 7 1324840 Zone:1
-getPopulationofCountry Netherlands Zone:1
-getNumberofCities Switzerland 9005006 Zone:4
-getNumberofCountries 3 714219 Zone:1
-getNumberofCountries 3 2447807 Zone:4
-getNumberofCities Belgium 5112445 Zone:4
-getNumberofCities Sweden 346586 Zone:1
-getNumberofCities Canada 4933296 Zone:3
-getPopulationofCountry Norway Zone:2
-getNumberofCities Switzerland 7899557 Zone:4
-getNumberofCountries 5 8548882 Zone:5
-getNumberofCountries 10 8646227 Zone:4
-getPopulationofCountry Canada Zone:4
-getNumberofCities Switzerland 9667681 Zone:5
-getNumberofCities Sweden 9562775 Zone:4
-getNumberofCities Australia 3011676 Zone:5
-getNumberofCountriesMax 8 4841083 9077961 Zone:3
-getNumberofCities Netherlands 4587716 Zone:5
-getNumberofCountriesMax 3 5967671 4276552 Zone:2
-getNumberofCountries 6 8680643 Zone:3
-getNumberofCountries 9 1116669 Zone:2
-getNumberofCountriesMax 2 6523848 2701527 Zone:5
-getNumberofCountries 9 7975349 Zone:4
-getNumberofCities Egypt 1708849 Zone:2
-getNumberofCountriesMax 9 1432291 6931923 Zone:5
-getPopulationofCountry Switzerland Zone:5
-getPopulationofCountry Canada Zone:1
-getNumberofCities Canada 4439266 Zone:4
-getNumberofCities Egypt 4482952 Zone:1
-getNumberofCities Belgium 6561008 Zone:3
-getNumberofCountries 4 3074893 Zone:5
-getPopulationofCountry Norway Zone:3
-getNumberofCities Egypt 6777344 Zone:4
-getNumberofCountriesMax 6 2861517 3882992 Zone:5
-getNumberofCountries 3 2206612 Zone:5
-getPopulationofCountry Belgium Zone:3
-getNumberofCountries 7 1769059 Zone:2
-getNumberofCountriesMax 5 246049 9293408 Zone:2
-getNumberofCountriesMax 6 8415843 4511704 Zone:5
-getNumberofCountries 8 9396330 Zone:4
-getPopulationofCountry Switzerland Zone:3
-getNumberofCountriesMax 10 9609413 7781102 Zone:2
-getNumberofCountries 3 3556158 Zone:2
-getNumberofCountriesMax 7 6578365 3302456 Zone:1
-getNumberofCountriesMax 5 6588421 8755941 Zone:3
-getNumberofCountries 9 3244561 Zone:2
-getNumberofCountriesMax 4 5047712 5358086 Zone:4
-getNumberofCities Australia 7591480 Zone:4
-getNumberofCountriesMax 10 9653994 4937932 Zone:3
-getNumberofCountriesMax 10 2006701 117625 Zone:4
-getNumberofCountriesMax 6 4103892 4419207 Zone:3
+getNumberofCities Germany 900247 Zone:2
+getNumberofCities Israel 2237505 Zone:1
+getPopulationofCountry Canada Zone:2
+getNumberofCountriesMax 5 8631544 2179955 Zone:3
+getNumberofCities Norway 8263256 Zone:2
+getPopulationofCountry Sweden Zone:1
+getNumberofCountries 4 7567842 Zone:5
+getNumberofCities Israel 838663 Zone:3
+getNumberofCountriesMax 6 1409940 6229101 Zone:1
+getNumberofCities Belgium 3602444 Zone:3
+getNumberofCountries 2 6161363 Zone:3
 getPopulationofCountry Belgium Zone:1
-getNumberofCountriesMax 4 9140380 6265617 Zone:1
-getNumberofCountries 6 4674203 Zone:4
-getPopulationofCountry Israel Zone:3
-getPopulationofCountry Belgium Zone:4
-getNumberofCities Belgium 7956895 Zone:2
-getNumberofCountries 9 9866073 Zone:4
-getNumberofCountriesMax 1 1176549 707325 Zone:5
-getNumberofCountries 8 5568570 Zone:1
-getPopulationofCountry Norway Zone:1
-getNumberofCountries 9 5015228 Zone:4
-getNumberofCountriesMax 7 9373370 9026834 Zone:4
-getNumberofCities Sweden 7183004 Zone:2
-getNumberofCountriesMax 4 5263590 1738974 Zone:5
-getNumberofCountriesMax 4 8598102 391846 Zone:1
-getNumberofCities Netherlands 565331 Zone:2
+getNumberofCountries 8 6584682 Zone:4
+getNumberofCountries 8 9530559 Zone:2
+getPopulationofCountry Sweden Zone:3
 getPopulationofCountry Norway Zone:3
-getNumberofCountries 5 2590951 Zone:4
-getNumberofCountries 5 2883544 Zone:5
-getNumberofCountries 10 5457412 Zone:1
-getNumberofCities Norway 4212241 Zone:1
-getNumberofCities Sweden 204238 Zone:4
-getPopulationofCountry Sweden Zone:2
+getNumberofCities Belgium 315907 Zone:3
+getNumberofCities Norway 6312835 Zone:4
+getPopulationofCountry Switzerland Zone:1
+getNumberofCountries 5 2198045 Zone:4
+getPopulationofCountry Australia Zone:1
+getNumberofCountriesMax 3 2242294 5498787 Zone:3
+getNumberofCountriesMax 4 904059 2217240 Zone:3
+getNumberofCountries 8 4912866 Zone:1
+getNumberofCities Israel 9653783 Zone:1
+getNumberofCountriesMax 2 7030100 5979638 Zone:1
+getNumberofCities Egypt 8594717 Zone:1
+getNumberofCountriesMax 1 3955449 7738241 Zone:1
+getNumberofCities Egypt 4853336 Zone:2
+getNumberofCities Sweden 2136664 Zone:4
+getNumberofCities Sweden 220088 Zone:4
+getNumberofCountries 8 8567699 Zone:2
+getNumberofCountriesMax 3 3643502 3154909 Zone:2
+getNumberofCities Sweden 5771802 Zone:3
+getPopulationofCountry Netherlands Zone:4
+getNumberofCountries 3 1881660 Zone:2
+getPopulationofCountry Israel Zone:1
+getNumberofCountries 9 395524 Zone:5
+getNumberofCities Germany 2181639 Zone:1
+getNumberofCountries 3 7798479 Zone:4
+getNumberofCountries 6 5591911 Zone:4
+getNumberofCountries 9 8649450 Zone:3
+getNumberofCountries 4 7193810 Zone:2
+getPopulationofCountry Australia Zone:1
+getNumberofCities Canada 8612497 Zone:3
+getNumberofCities Belgium 5307308 Zone:5
+getPopulationofCountry Switzerland Zone:2
+getPopulationofCountry Australia Zone:1
+getNumberofCountriesMax 10 5090036 5964431 Zone:3
+getPopulationofCountry Australia Zone:3
+getNumberofCountries 1 4529228 Zone:3
 getPopulationofCountry Egypt Zone:4
-getNumberofCities Germany 751412 Zone:5
-getNumberofCountries 5 977970 Zone:2
-getNumberofCountries 4 6008965 Zone:2
-getNumberofCities Canada 8181695 Zone:4
-getNumberofCountriesMax 9 6115482 2403863 Zone:5
-getNumberofCountriesMax 1 5732035 3330089 Zone:5
-getNumberofCities Egypt 4584376 Zone:1
-getNumberofCountries 10 9193177 Zone:2
-getNumberofCountries 2 7545211 Zone:4
+getNumberofCountriesMax 5 5780317 6681637 Zone:4
+getNumberofCities Netherlands 4981060 Zone:1
 getPopulationofCountry Belgium Zone:5
-getNumberofCities Israel 7257658 Zone:5
-getNumberofCities Norway 4683163 Zone:2
-getNumberofCountries 10 1216705 Zone:1
-getNumberofCountries 5 934232 Zone:1
-getNumberofCountriesMax 10 8749505 4764654 Zone:4
+getNumberofCountriesMax 10 6597372 1406337 Zone:5
+getNumberofCountries 2 9061240 Zone:3
+getPopulationofCountry Australia Zone:5
+getNumberofCities Switzerland 4565067 Zone:5
+getNumberofCountriesMax 6 2414219 2071525 Zone:3
+getNumberofCountriesMax 4 5369789 562777 Zone:3
+getNumberofCountries 4 6103584 Zone:1
+getNumberofCountries 1 4083110 Zone:2
+getNumberofCountriesMax 8 4449937 6449042 Zone:2
+getNumberofCountries 1 8436265 Zone:4
+getPopulationofCountry Netherlands Zone:3
+getNumberofCities Germany 5870661 Zone:1
+getPopulationofCountry Australia Zone:2
+getNumberofCities Norway 7190648 Zone:2
+getNumberofCountries 8 3294795 Zone:4
+getNumberofCities Germany 6273086 Zone:4
+getNumberofCountries 10 1557170 Zone:5
+getNumberofCountries 8 7914657 Zone:5
+getNumberofCities Israel 6940387 Zone:2
+getNumberofCountriesMax 2 4911089 2220475 Zone:4
+getNumberofCountries 8 8272366 Zone:5
+getNumberofCities Norway 9823985 Zone:4
+getNumberofCountries 7 3430613 Zone:4
+getNumberofCountries 9 5388549 Zone:2
+getNumberofCities Germany 8319162 Zone:5
+getPopulationofCountry Norway Zone:4
+getNumberofCities Germany 8460202 Zone:3
+getNumberofCountriesMax 5 3843877 9955588 Zone:1
+getPopulationofCountry Belgium Zone:2
+getNumberofCities Switzerland 3098210 Zone:1
+getNumberofCountriesMax 8 3926873 9426802 Zone:5
+getNumberofCities Belgium 5415424 Zone:3
+getNumberofCountriesMax 2 7941466 284780 Zone:3
+getNumberofCountries 1 7363532 Zone:3
+getNumberofCities Germany 5831916 Zone:2
+getNumberofCountriesMax 5 8400319 8083715 Zone:2
+getNumberofCities Norway 4962571 Zone:1
+getNumberofCountriesMax 7 2057423 3142734 Zone:4
+getNumberofCountriesMax 9 9067052 7937662 Zone:4
+getNumberofCities Australia 8564707 Zone:2
+getNumberofCities Sweden 5263086 Zone:4
+getNumberofCountries 9 8096369 Zone:2
+getNumberofCountries 1 9259171 Zone:5
+getNumberofCountries 8 5045919 Zone:3
+getPopulationofCountry Norway Zone:5
+getNumberofCountries 5 7908891 Zone:1
+getPopulationofCountry Netherlands Zone:4
+getPopulationofCountry Germany Zone:1
+getNumberofCountriesMax 9 9516252 7428725 Zone:5
+getNumberofCountriesMax 8 5392921 5389655 Zone:4
+getPopulationofCountry Egypt Zone:1
+getPopulationofCountry Sweden Zone:2
+getNumberofCountries 9 4968720 Zone:3
+getNumberofCountries 8 359720 Zone:2
+getPopulationofCountry Egypt Zone:3
+getNumberofCities Canada 6252446 Zone:5
+getNumberofCountriesMax 4 4967875 5620534 Zone:1
+getNumberofCountriesMax 10 2839969 6479990 Zone:3
+getNumberofCities Belgium 3122961 Zone:2
+getNumberofCountries 5 7177571 Zone:1
+getNumberofCities Israel 1459977 Zone:5
+getNumberofCountriesMax 5 5985780 8409921 Zone:1
+getNumberofCities Israel 1410929 Zone:2
+getNumberofCountries 3 5632760 Zone:2
+getNumberofCountriesMax 3 5950334 1422343 Zone:3
+getNumberofCities Switzerland 8480528 Zone:3
+getNumberofCountriesMax 5 3795181 2467771 Zone:5
+getNumberofCountriesMax 4 122250 4059459 Zone:3
+getPopulationofCountry Israel Zone:1
+getNumberofCities Belgium 9203018 Zone:5
+getPopulationofCountry Switzerland Zone:3
+getNumberofCountriesMax 5 3763481 6681090 Zone:4
+getNumberofCountriesMax 4 1075663 5569765 Zone:2
+getNumberofCities Sweden 3808141 Zone:2
+getPopulationofCountry Australia Zone:5
+getPopulationofCountry Sweden Zone:5
+getNumberofCountriesMax 6 2864657 5102978 Zone:1
+getPopulationofCountry Germany Zone:4
+getNumberofCountries 3 6268364 Zone:4
+getNumberofCountriesMax 9 5677005 1814021 Zone:2
+getNumberofCountries 8 3295640 Zone:5
+getNumberofCountries 9 2177942 Zone:5
+getNumberofCities Germany 358570 Zone:1
+getPopulationofCountry Sweden Zone:4
+getNumberofCities Australia 5013561 Zone:2
+getNumberofCountriesMax 1 210678 2592765 Zone:2
+getNumberofCountriesMax 10 4726341 2954087 Zone:5
+getNumberofCities Netherlands 3928804 Zone:3
+getNumberofCities Egypt 5609513 Zone:5
+getNumberofCountriesMax 10 5055162 1301544 Zone:5
+getPopulationofCountry Egypt Zone:2
+getNumberofCountriesMax 6 765902 6270756 Zone:2
+getNumberofCountriesMax 5 5712024 7413870 Zone:4
+getNumberofCountries 5 6734202 Zone:4
+getNumberofCities Germany 657444 Zone:1
+getPopulationofCountry Israel Zone:4
+getPopulationofCountry Sweden Zone:3
+getNumberofCities Norway 2587477 Zone:1
+getNumberofCountriesMax 4 3433528 2032387 Zone:2
+getNumberofCountriesMax 1 790291 3862161 Zone:1
+getPopulationofCountry Egypt Zone:5
+getNumberofCountries 4 4630295 Zone:2
+getPopulationofCountry Israel Zone:2
+getNumberofCities Egypt 5148659 Zone:2
+getNumberofCities Canada 1638220 Zone:3
+getNumberofCountriesMax 1 8260667 6444819 Zone:2
+getPopulationofCountry Australia Zone:1
+getNumberofCountriesMax 4 2705966 5439529 Zone:2
+getNumberofCountries 2 954626 Zone:1
+getNumberofCountriesMax 10 8779868 2340427 Zone:3
+getNumberofCountriesMax 1 4991964 9278535 Zone:2
+getNumberofCities Switzerland 1031458 Zone:4
+getPopulationofCountry Switzerland Zone:3
+getNumberofCities Sweden 8383693 Zone:1
+getPopulationofCountry Canada Zone:5
+getNumberofCities Netherlands 6564508 Zone:2
 getPopulationofCountry Norway Zone:2
-getNumberofCountries 9 7343140 Zone:4
-getNumberofCountries 10 4381604 Zone:5
-getNumberofCountries 9 8973571 Zone:4
-getNumberofCountries 6 5951494 Zone:3
-getNumberofCountriesMax 3 1385401 894726 Zone:4
+getNumberofCountriesMax 6 2060761 5266895 Zone:3
+getNumberofCities Canada 1377125 Zone:3
+getNumberofCities Norway 6403793 Zone:1
+getPopulationofCountry Germany Zone:2
+getNumberofCountriesMax 3 2512670 3208330 Zone:1
+getNumberofCountriesMax 1 2249820 936764 Zone:5
+getNumberofCities Netherlands 3146674 Zone:2
+getNumberofCountriesMax 9 9618269 6707633 Zone:1
+getNumberofCountriesMax 10 3433654 786616 Zone:4
+getNumberofCountries 3 2468399 Zone:5
+getPopulationofCountry Canada Zone:1
+getPopulationofCountry Norway Zone:2
+getNumberofCountries 7 6132174 Zone:2
+getPopulationofCountry Australia Zone:1
+getNumberofCountries 2 8296438 Zone:1
+getPopulationofCountry Sweden Zone:2
+getPopulationofCountry Australia Zone:2
+getNumberofCountriesMax 3 4075943 9338020 Zone:2
+getPopulationofCountry Canada Zone:5
+getPopulationofCountry Belgium Zone:2
+getPopulationofCountry Belgium Zone:3
+getNumberofCountries 8 9864384 Zone:1
+getNumberofCities Sweden 7258020 Zone:3
+getNumberofCountriesMax 9 1790713 556618 Zone:5
+getNumberofCountries 2 2462361 Zone:4
+getNumberofCountriesMax 5 6716803 9218686 Zone:1
+getNumberofCities Switzerland 7719643 Zone:2
+getNumberofCountries 4 6438203 Zone:5
+getNumberofCities Netherlands 276823 Zone:1
+getNumberofCountries 4 7744940 Zone:1
+getNumberofCountries 2 2652976 Zone:3
+getNumberofCountries 8 9698197 Zone:4
+getPopulationofCountry Egypt Zone:5
+getNumberofCountries 1 3579357 Zone:2
+getPopulationofCountry Sweden Zone:2
+getPopulationofCountry Sweden Zone:1
+getNumberofCountriesMax 6 3704459 7876583 Zone:1
+getNumberofCountries 2 8436617 Zone:5
+getPopulationofCountry Germany Zone:4
+getPopulationofCountry Netherlands Zone:4
+getNumberofCities Israel 5059033 Zone:3
+getNumberofCountries 8 7653934 Zone:5
+getNumberofCountries 6 4097975 Zone:5
+getNumberofCountriesMax 9 1819106 298591 Zone:2
+getNumberofCountriesMax 5 3362467 7935764 Zone:4
+getPopulationofCountry Switzerland Zone:1
+getNumberofCountries 1 185876 Zone:2
+getNumberofCities Israel 5313972 Zone:3
+getPopulationofCountry Germany Zone:4
+getPopulationofCountry Norway Zone:3
+getNumberofCountriesMax 9 6783876 9916943 Zone:4
+getPopulationofCountry Sweden Zone:5
+getPopulationofCountry Canada Zone:1
+getNumberofCountriesMax 3 5469420 2484070 Zone:5
+getPopulationofCountry Belgium Zone:3
+getNumberofCountriesMax 2 1737387 6025907 Zone:2
+getNumberofCountries 7 4147292 Zone:2
+getNumberofCountries 9 3491123 Zone:1
+getNumberofCities Egypt 5723331 Zone:1
+getNumberofCountries 5 7140482 Zone:2
+getNumberofCountries 3 2412787 Zone:5
+getPopulationofCountry Norway Zone:5
+getNumberofCities Netherlands 1663877 Zone:1
+getNumberofCities Germany 2402843 Zone:2
 getPopulationofCountry Netherlands Zone:5
-getNumberofCities Egypt 3174748 Zone:5
-getNumberofCountriesMax 10 110685 7759850 Zone:3
-getNumberofCountries 1 9789050 Zone:1
-getPopulationofCountry Egypt Zone:2
-getNumberofCountries 7 1126735 Zone:4
-getPopulationofCountry Australia Zone:2
-getNumberofCountriesMax 1 3975866 5862698 Zone:3
-getPopulationofCountry Belgium Zone:3
-getNumberofCountries 10 7131790 Zone:4
-getPopulationofCountry Germany Zone:2
-getNumberofCities Egypt 5484087 Zone:4
-getNumberofCities Australia 9821271 Zone:2
-getNumberofCountries 1 3694823 Zone:5
-getNumberofCities Australia 1348177 Zone:5
-getNumberofCountries 2 4221118 Zone:4
-getNumberofCountries 9 7480909 Zone:3
-getNumberofCities Norway 6991540 Zone:2
-getNumberofCountriesMax 5 825811 1931886 Zone:2
-getNumberofCountries 1 447138 Zone:1
-getNumberofCities Sweden 5200740 Zone:3
-getNumberofCountries 2 3136937 Zone:1
-getNumberofCities Germany 8932546 Zone:5
-getNumberofCountries 1 2088487 Zone:2
-getNumberofCountries 2 473661 Zone:5
-getNumberofCities Germany 5328453 Zone:5
-getNumberofCountries 8 6257560 Zone:5
-getNumberofCountriesMax 9 6263188 2317533 Zone:5
-getNumberofCities Australia 1973420 Zone:5
-getNumberofCountries 10 9708237 Zone:5
-getNumberofCountriesMax 9 6392093 3946636 Zone:1
-getNumberofCountriesMax 4 4284086 8679742 Zone:1
-getNumberofCities Israel 7486572 Zone:4
-getPopulationofCountry Australia Zone:2
-getNumberofCities Australia 5786383 Zone:4
-getNumberofCountriesMax 5 4468787 2675400 Zone:2
-getNumberofCities Sweden 1217011 Zone:3
-getPopulationofCountry Egypt Zone:3
-getNumberofCountries 8 3434610 Zone:4
-getNumberofCountriesMax 9 7829542 2313913 Zone:5
-getPopulationofCountry Netherlands Zone:3
-getNumberofCountries 9 4570593 Zone:1
-getNumberofCountriesMax 5 6219831 1439991 Zone:3
-getNumberofCountriesMax 4 4898420 9515514 Zone:4
-getNumberofCountriesMax 1 2309874 7576489 Zone:3
-getNumberofCities Germany 3395000 Zone:5
-getNumberofCountries 3 6283009 Zone:5
-getNumberofCountriesMax 9 375711 7666399 Zone:3
-getNumberofCountries 10 216484 Zone:1
+getNumberofCities Belgium 5615897 Zone:3
+getNumberofCountries 5 1610993 Zone:4
 getPopulationofCountry Germany Zone:1
-getPopulationofCountry Sweden Zone:1
-getPopulationofCountry Belgium Zone:5
-getPopulationofCountry Norway Zone:2
-getNumberofCountriesMax 5 8448471 4856567 Zone:2
-getPopulationofCountry Belgium Zone:1
-getPopulationofCountry Israel Zone:3
-getNumberofCountries 4 4892305 Zone:4
-getNumberofCountries 1 5323340 Zone:2
-getNumberofCountriesMax 10 1623972 2818699 Zone:4
-getNumberofCountries 10 849191 Zone:1
-getNumberofCountries 5 5672463 Zone:4
-getNumberofCountries 6 305113 Zone:3
-getNumberofCountriesMax 9 4845558 8977820 Zone:1
-getNumberofCountries 7 8647766 Zone:2
-getNumberofCountriesMax 7 6674776 9096193 Zone:4
-getPopulationofCountry Sweden Zone:4
-getNumberofCities Sweden 2763702 Zone:3
-getPopulationofCountry Belgium Zone:2
-getNumberofCountries 9 6005576 Zone:5
-getNumberofCountriesMax 1 6993526 267503 Zone:2
-getNumberofCountries 1 1373483 Zone:2
-getNumberofCountries 10 1364085 Zone:3
-getNumberofCountriesMax 2 6373018 1719955 Zone:1
-getPopulationofCountry Egypt Zone:2
-getPopulationofCountry Israel Zone:3
-getPopulationofCountry Sweden Zone:5
-getNumberofCountriesMax 2 5080033 3941499 Zone:4
-getNumberofCities Israel 4939669 Zone:5
-getNumberofCountriesMax 10 7981630 2326764 Zone:2
-getNumberofCountriesMax 9 470324 2815307 Zone:2
-getNumberofCities Belgium 4699790 Zone:2
-getPopulationofCountry Sweden Zone:3
-getNumberofCountriesMax 7 5599026 8115323 Zone:2
-getPopulationofCountry Australia Zone:3
-getNumberofCities Norway 6622638 Zone:5
-getNumberofCountriesMax 3 4950323 953840 Zone:2
-getNumberofCountriesMax 7 1405879 4605036 Zone:1
-getNumberofCities Belgium 1425272 Zone:2
-getNumberofCountries 5 6690236 Zone:4
-getNumberofCountries 3 4604287 Zone:4
-getNumberofCountriesMax 8 3092318 7706527 Zone:4
-getNumberofCountriesMax 5 5032932 5634571 Zone:4
-getNumberofCountries 1 2745022 Zone:5
-getNumberofCountries 2 5567051 Zone:5
-getPopulationofCountry Switzerland Zone:3
+getPopulationofCountry Belgium Zone:4
+getNumberofCountriesMax 10 2906429 1067318 Zone:5
 getPopulationofCountry Egypt Zone:4
-getNumberofCountries 9 1066662 Zone:2
-getPopulationofCountry Norway Zone:5
-getNumberofCountriesMax 3 3623522 8120439 Zone:4
-getNumberofCountries 4 3699206 Zone:1
-getPopulationofCountry Australia Zone:2
-getNumberofCities Netherlands 5724724 Zone:5
-getNumberofCountries 7 2793639 Zone:1
-getNumberofCountriesMax 2 3453062 9812226 Zone:4
+getNumberofCities Norway 2506716 Zone:2
+getNumberofCountries 5 6940766 Zone:3
+getNumberofCountriesMax 2 8553807 8908572 Zone:4
+getPopulationofCountry Belgium Zone:5
+getNumberofCountriesMax 9 7062268 2235595 Zone:3
+getNumberofCountries 2 6739695 Zone:2
+getNumberofCountriesMax 5 4876207 5633091 Zone:3
+getNumberofCountries 8 9919071 Zone:3
+getPopulationofCountry Sweden Zone:1
 getPopulationofCountry Norway Zone:3
 getPopulationofCountry Canada Zone:1
-getNumberofCities Belgium 7045109 Zone:4
-getNumberofCities Sweden 2895312 Zone:5
-getNumberofCities Egypt 5968641 Zone:5
-getNumberofCountriesMax 9 8997384 9875251 Zone:3
-getNumberofCountriesMax 8 557018 1053529 Zone:5
-getNumberofCities Israel 5162873 Zone:4
-getNumberofCities Australia 459061 Zone:1
-getNumberofCountriesMax 3 5065547 5052403 Zone:2
+getNumberofCountries 6 8675926 Zone:5
 getPopulationofCountry Australia Zone:5
-getNumberofCountriesMax 10 3397564 5259649 Zone:4
-getNumberofCities Sweden 2622474 Zone:5
+getNumberofCities Norway 2910459 Zone:1
+getNumberofCountries 9 2556913 Zone:3
+getNumberofCities Australia 9341183 Zone:1
+getNumberofCountries 6 5738385 Zone:4
+getNumberofCities Canada 1537277 Zone:4
+getPopulationofCountry Switzerland Zone:3
+getNumberofCountriesMax 3 2675226 6757962 Zone:1
+getPopulationofCountry Norway Zone:5
+getNumberofCities Norway 195196 Zone:5
+getNumberofCountriesMax 4 6026196 2473534 Zone:5
+getNumberofCities Australia 9288199 Zone:3
+getNumberofCountries 6 6741270 Zone:4
+getPopulationofCountry Sweden Zone:4
+getPopulationofCountry Egypt Zone:4
+getPopulationofCountry Norway Zone:4
+getNumberofCountries 3 7032998 Zone:2
+getPopulationofCountry Norway Zone:5
+getNumberofCountries 6 7635211 Zone:1
+getPopulationofCountry Canada Zone:4
+getNumberofCountriesMax 6 8945426 8437132 Zone:2
+getNumberofCountries 7 9169133 Zone:2
+getNumberofCountries 2 5885626 Zone:2
+getPopulationofCountry Netherlands Zone:4
+getNumberofCountriesMax 6 5542699 4769546 Zone:5
+getPopulationofCountry Germany Zone:5
+getNumberofCountriesMax 9 5316353 8053952 Zone:1
+getNumberofCountries 8 4163572 Zone:4
+getNumberofCountries 4 9758367 Zone:5
+getNumberofCities Sweden 2289555 Zone:5
+getPopulationofCountry Switzerland Zone:2
+getNumberofCities Israel 2521037 Zone:5
+getNumberofCountries 7 5262277 Zone:5
+getPopulationofCountry Egypt Zone:3
+getPopulationofCountry Belgium Zone:2
+getNumberofCities Egypt 3397147 Zone:3
+getPopulationofCountry Sweden Zone:5
+getNumberofCountriesMax 10 6742979 9035740 Zone:5
+getNumberofCountriesMax 7 5867022 8326664 Zone:2
+getNumberofCities Germany 6119970 Zone:2
+getNumberofCountriesMax 8 2071449 7750331 Zone:3
+getNumberofCountriesMax 2 9720109 9066254 Zone:5
+getNumberofCountries 9 3413583 Zone:1
+getNumberofCountries 7 8105455 Zone:4
+getNumberofCities Australia 1800409 Zone:3
+getPopulationofCountry Netherlands Zone:4
+getNumberofCities Germany 5634402 Zone:1
+getNumberofCountriesMax 5 1043328 8192101 Zone:2
+getNumberofCountriesMax 2 9263178 4588546 Zone:2
+getNumberofCountriesMax 8 2367689 3401879 Zone:1
+getNumberofCountries 1 5860119 Zone:2
+getPopulationofCountry Australia Zone:4
+getNumberofCountriesMax 8 4796897 2052963 Zone:1
+getNumberofCities Israel 5441901 Zone:3
+getNumberofCountriesMax 4 5699183 7359639 Zone:5
+getNumberofCities Australia 1860190 Zone:3
+getNumberofCountries 1 2092368 Zone:2
+getPopulationofCountry Israel Zone:3
+getNumberofCountriesMax 4 8672380 2456018 Zone:3
+getPopulationofCountry Egypt Zone:2
+getPopulationofCountry Australia Zone:4
+getNumberofCities Canada 8979714 Zone:1
+getNumberofCountries 4 819088 Zone:5
+getNumberofCountriesMax 8 9388471 536005 Zone:2
+getNumberofCountriesMax 6 5676545 8672521 Zone:3
+getNumberofCities Netherlands 8199740 Zone:5
+getNumberofCountriesMax 1 858711 3361392 Zone:3
+getNumberofCountries 10 3923271 Zone:2
+getPopulationofCountry Norway Zone:1
+getNumberofCountries 8 7643758 Zone:5
+getNumberofCountries 1 4755522 Zone:3
+getNumberofCountriesMax 4 3108819 1718435 Zone:3
+getPopulationofCountry Switzerland Zone:2
+getNumberofCountries 2 2731209 Zone:4
+getNumberofCountries 10 6508336 Zone:3
+getNumberofCities Norway 2158585 Zone:2
+getNumberofCountriesMax 2 5365578 9117622 Zone:3
+getNumberofCities Norway 1640757 Zone:3
+getNumberofCities Israel 7635633 Zone:1
+getNumberofCountriesMax 5 4345629 3379287 Zone:3
+getNumberofCountries 3 8800794 Zone:4
+getPopulationofCountry Germany Zone:2
+getNumberofCountriesMax 10 209200 8529916 Zone:4
+getNumberofCountries 2 4861921 Zone:4
+getNumberofCountriesMax 6 152110 9511064 Zone:2
+getPopulationofCountry Egypt Zone:4
+getNumberofCountriesMax 1 7239096 5055710 Zone:5
+getNumberofCities Norway 2405894 Zone:2
+getNumberofCountriesMax 5 2487562 7943972 Zone:4
+getNumberofCountries 3 3276297 Zone:3
+getNumberofCities Egypt 2902579 Zone:4
+getNumberofCountriesMax 3 6275167 3494403 Zone:5
+getNumberofCities Canada 8587284 Zone:1
+getNumberofCountries 3 3253247 Zone:2
+getPopulationofCountry Sweden Zone:1
+getPopulationofCountry Netherlands Zone:4
+getNumberofCities Norway 8488918 Zone:1
+getNumberofCountries 3 9689513 Zone:2
+getNumberofCountriesMax 6 6028991 7929451 Zone:4
+getNumberofCountries 2 9490444 Zone:2
+getNumberofCities Australia 1614164 Zone:3
+getNumberofCountriesMax 10 2944513 2469896 Zone:4
+getNumberofCountriesMax 1 9158763 7344639 Zone:3
+getNumberofCities Germany 1795956 Zone:4
+getNumberofCountriesMax 6 225570 9237484 Zone:2
+getNumberofCountries 3 6570747 Zone:2
+getNumberofCountriesMax 3 9493317 9286613 Zone:2
+getPopulationofCountry Australia Zone:1
+getNumberofCities Netherlands 4120600 Zone:2
+getNumberofCities Netherlands 3243228 Zone:2
+getNumberofCities Germany 9660126 Zone:5
+getNumberofCountries 8 8012861 Zone:1
+getNumberofCities Sweden 1113886 Zone:1
+getNumberofCities Norway 2386691 Zone:1
+getPopulationofCountry Germany Zone:2
+getNumberofCountriesMax 10 6908628 7119848 Zone:5
+getNumberofCountriesMax 10 878424 2826545 Zone:2
+getNumberofCountriesMax 1 1939985 3862240 Zone:5
+getPopulationofCountry Egypt Zone:3
+getNumberofCountries 9 9863053 Zone:1
+getNumberofCountries 10 9044081 Zone:1
+getPopulationofCountry Sweden Zone:2
+getPopulationofCountry Sweden Zone:4
+getNumberofCities Belgium 1986890 Zone:4
+getNumberofCountriesMax 3 9517057 6916571 Zone:4
+getPopulationofCountry Netherlands Zone:4
+getNumberofCountries 9 6953167 Zone:5
+getNumberofCountries 1 9632440 Zone:3
+getNumberofCities Australia 6247115 Zone:5
+getNumberofCities Israel 6860041 Zone:5
+getNumberofCities Netherlands 6486573 Zone:4
+getNumberofCountries 8 9554493 Zone:5
+getNumberofCities Norway 4800496 Zone:3
+getPopulationofCountry Australia Zone:2
+getNumberofCountries 5 8062550 Zone:3
+getNumberofCities Switzerland 8315258 Zone:5
+getNumberofCities Israel 7126961 Zone:1
+getNumberofCountriesMax 3 6308934 6897975 Zone:1
+getNumberofCountriesMax 5 9414068 8647194 Zone:1
+getPopulationofCountry Switzerland Zone:2
+getNumberofCities Egypt 8811992 Zone:5
+getNumberofCountriesMax 5 9094236 9993680 Zone:1
+getPopulationofCountry Netherlands Zone:2
+getPopulationofCountry Canada Zone:1
+getNumberofCities Canada 9344907 Zone:2
+getPopulationofCountry Sweden Zone:1
+getNumberofCountries 10 3928631 Zone:1
+getNumberofCountries 4 170094 Zone:3
+getNumberofCountries 9 4945625 Zone:2
+getNumberofCountriesMax 2 1899537 4844992 Zone:4
+getNumberofCountries 8 9203356 Zone:3
+getNumberofCountries 9 7561204 Zone:2
+getNumberofCities Belgium 8437267 Zone:2
+getNumberofCities Canada 464726 Zone:1
+getPopulationofCountry Norway Zone:3
+getNumberofCountriesMax 8 7240264 3508367 Zone:3
+getNumberofCities Netherlands 7690954 Zone:4
+getNumberofCities Germany 5743729 Zone:4
+getNumberofCities Israel 9112851 Zone:2
+getNumberofCountries 1 4687155 Zone:2
+getNumberofCountriesMax 7 8986096 3219429 Zone:3
+getNumberofCountriesMax 8 6327121 7724214 Zone:1
+getPopulationofCountry Switzerland Zone:4
+getNumberofCities Norway 4397893 Zone:3
+getNumberofCountriesMax 3 2320977 882271 Zone:5
+getNumberofCountries 3 7337472 Zone:5
+getPopulationofCountry Germany Zone:3
+getNumberofCountriesMax 7 1389831 9047585 Zone:3
+getNumberofCountriesMax 9 1306860 2542040 Zone:3
+getPopulationofCountry Norway Zone:5
+getNumberofCities Netherlands 7113501 Zone:2
+getNumberofCities Norway 1959638 Zone:5
+getNumberofCountriesMax 8 2059270 609592 Zone:3
+getNumberofCities Egypt 5463896 Zone:3
+getNumberofCities Germany 5988813 Zone:2
+getNumberofCountries 6 4553356 Zone:2
+getNumberofCities Israel 6344088 Zone:5
+getPopulationofCountry Germany Zone:2
+getNumberofCities Norway 2151089 Zone:4
+getPopulationofCountry Norway Zone:2
+getNumberofCountriesMax 5 4170436 4694214 Zone:5
+getNumberofCountries 6 7485673 Zone:3
+getNumberofCountriesMax 9 6022001 5228917 Zone:1
+getNumberofCities Netherlands 3752995 Zone:3
+getPopulationofCountry Norway Zone:2
+getPopulationofCountry Belgium Zone:2
+getNumberofCountriesMax 4 2753844 4795131 Zone:2
+getNumberofCountries 3 1617364 Zone:1
+getNumberofCities Norway 2284584 Zone:4
+getPopulationofCountry Israel Zone:1
+getNumberofCountriesMax 5 272966 1868920 Zone:1
+getPopulationofCountry Norway Zone:2
+getNumberofCountries 6 2369735 Zone:2
+getPopulationofCountry Canada Zone:1
+getPopulationofCountry Norway Zone:3
+getNumberofCountriesMax 7 7106176 6268129 Zone:3
+getPopulationofCountry Norway Zone:3
+getPopulationofCountry Switzerland Zone:2
+getNumberofCities Belgium 6015761 Zone:1
+getNumberofCountries 10 7851292 Zone:1
+getNumberofCities Egypt 6869738 Zone:4
+getNumberofCountries 1 4589446 Zone:1
+getPopulationofCountry Belgium Zone:1
+getNumberofCountriesMax 5 712160 1897765 Zone:1
+getNumberofCountries 9 4443587 Zone:4
+getNumberofCities Sweden 5210739 Zone:3
+getNumberofCountries 1 3213767 Zone:5
+getNumberofCities Norway 1937646 Zone:4
+getNumberofCountries 7 4115838 Zone:3
+getNumberofCountries 1 9678562 Zone:1
+getPopulationofCountry Sweden Zone:4
+getNumberofCountries 6 2649448 Zone:1
+getNumberofCountries 3 9609424 Zone:3
+getPopulationofCountry Germany Zone:3
+getPopulationofCountry Egypt Zone:1
+getNumberofCountries 8 4787678 Zone:1
+getNumberofCountriesMax 2 5481377 7248316 Zone:1
+getNumberofCities Canada 2911498 Zone:4
+getNumberofCountriesMax 4 3440593 2990206 Zone:1
+getNumberofCountries 1 4278243 Zone:4
+getNumberofCountries 10 6392529 Zone:1
+getPopulationofCountry Germany Zone:5
+getNumberofCountries 1 816857 Zone:4
+getNumberofCities Germany 8110975 Zone:4
+getNumberofCities Egypt 8772785 Zone:4
+getNumberofCities Switzerland 7521285 Zone:2
+getNumberofCities Netherlands 7971718 Zone:5
+getNumberofCountriesMax 2 559911 8531593 Zone:1
+getNumberofCountries 7 9980012 Zone:5
+getPopulationofCountry Canada Zone:1
+getPopulationofCountry Norway Zone:4
+getPopulationofCountry Canada Zone:2
+getNumberofCountries 2 2530025 Zone:1
+getNumberofCountriesMax 2 9213252 2406545 Zone:5
+getNumberofCountries 4 6543122 Zone:1
+getPopulationofCountry Australia Zone:1
+getNumberofCities Canada 6149044 Zone:5
+getPopulationofCountry Sweden Zone:1
+getNumberofCountries 2 140207 Zone:5
+getNumberofCountries 9 595994 Zone:5
+getNumberofCountriesMax 3 5150594 990825 Zone:2
+getNumberofCountriesMax 6 3001077 408024 Zone:4
+getPopulationofCountry Sweden Zone:4
+getPopulationofCountry Canada Zone:1
+getNumberofCountries 6 982924 Zone:2
+getPopulationofCountry Sweden Zone:1
+getNumberofCities Netherlands 1566032 Zone:4
+getNumberofCountriesMax 6 467638 315987 Zone:1
+getNumberofCities Israel 7485306 Zone:2
+getPopulationofCountry Sweden Zone:2
+getPopulationofCountry Israel Zone:2
+getPopulationofCountry Germany Zone:2
+getNumberofCities Australia 6778297 Zone:5
+getPopulationofCountry Netherlands Zone:5
+getNumberofCountries 9 3361516 Zone:2
+getNumberofCountries 5 7505464 Zone:5
+getPopulationofCountry Canada Zone:5
+getNumberofCountries 5 698677 Zone:5
+getNumberofCities Switzerland 4565018 Zone:3
+getPopulationofCountry Canada Zone:3
+getNumberofCities Norway 2138811 Zone:1
+getNumberofCities Australia 4464472 Zone:4
+getNumberofCities Switzerland 4233212 Zone:4
+getNumberofCities Netherlands 7066549 Zone:3
+getNumberofCountriesMax 8 1056060 4546434 Zone:1
+getNumberofCities Netherlands 4004919 Zone:4
+getNumberofCities Norway 2771923 Zone:2
+getNumberofCountriesMax 9 2243363 6915875 Zone:5
+getPopulationofCountry Germany Zone:4
+getNumberofCities Israel 6704213 Zone:2
+getNumberofCountriesMax 2 9743151 9495839 Zone:3
+getPopulationofCountry Israel Zone:2
+getPopulationofCountry Switzerland Zone:5
+getNumberofCountries 6 7532973 Zone:3
+getPopulationofCountry Switzerland Zone:3
+getNumberofCountries 3 789624 Zone:2
+getPopulationofCountry Canada Zone:5
+getNumberofCountries 3 4312755 Zone:1
+getNumberofCountries 9 3748469 Zone:5
+getNumberofCountriesMax 3 2918133 6842981 Zone:2
+getNumberofCountriesMax 2 2039186 5431959 Zone:3
+getNumberofCountries 6 9225862 Zone:5
+getNumberofCities Canada 4070465 Zone:2
+getNumberofCities Israel 3458477 Zone:4
+getNumberofCountries 9 2193553 Zone:5
+getNumberofCountries 4 3071071 Zone:1
+getPopulationofCountry Australia Zone:4
+getPopulationofCountry Switzerland Zone:3
+getNumberofCountriesMax 8 1159273 5730195 Zone:3
+getNumberofCountries 3 5322949 Zone:3
+getNumberofCountries 2 3028632 Zone:5
+getNumberofCountriesMax 7 7740299 3018792 Zone:3
+getNumberofCities Switzerland 4292852 Zone:3
+getNumberofCountriesMax 5 4450101 5265383 Zone:2
+getNumberofCities Israel 5206590 Zone:1
+getNumberofCountries 3 729433 Zone:1
+getPopulationofCountry Australia Zone:5
+getNumberofCountries 6 1928722 Zone:4
+getNumberofCountries 2 8748932 Zone:1
+getPopulationofCountry Australia Zone:2
+getNumberofCities Norway 7841601 Zone:2
+getNumberofCities Canada 5790807 Zone:2
+getNumberofCities Canada 433978 Zone:1
+getNumberofCities Egypt 4370202 Zone:5
+getNumberofCities Australia 2675937 Zone:1
+getNumberofCountries 6 4111400 Zone:1
+getNumberofCities Sweden 4457851 Zone:1
+getNumberofCountries 6 264528 Zone:5
+getNumberofCountriesMax 1 6531531 3661805 Zone:1
+getNumberofCities Germany 8980820 Zone:5
+getPopulationofCountry Norway Zone:5
+getNumberofCountries 4 4695395 Zone:1
+getNumberofCountries 10 1203117 Zone:2
+getPopulationofCountry Canada Zone:2
+getNumberofCities Netherlands 9384608 Zone:1
+getNumberofCountriesMax 6 5465058 249663 Zone:5
+getPopulationofCountry Switzerland Zone:1
+getPopulationofCountry Egypt Zone:4
+getNumberofCountriesMax 6 4697696 1502021 Zone:1
+getNumberofCities Egypt 1892129 Zone:3
+getNumberofCountriesMax 7 1127985 5488881 Zone:1
+getNumberofCountriesMax 6 3306177 5817640 Zone:1
+getNumberofCities Norway 421285 Zone:5
+getNumberofCountriesMax 1 9096399 1478337 Zone:2
+getNumberofCountriesMax 9 8289096 1315301 Zone:5
+getNumberofCountriesMax 6 9139197 983171 Zone:5
+getNumberofCountriesMax 1 604668 734503 Zone:5
+getNumberofCountriesMax 10 2423275 2136970 Zone:2
+getNumberofCountries 5 9862772 Zone:2
+getNumberofCities Egypt 4752830 Zone:4
+getNumberofCountries 8 2687207 Zone:5
+getPopulationofCountry Canada Zone:4
+getNumberofCountries 6 2155799 Zone:2
+getPopulationofCountry Australia Zone:5
+getPopulationofCountry Canada Zone:4
+getNumberofCountries 9 9299509 Zone:3
+getPopulationofCountry Australia Zone:3
+getPopulationofCountry Sweden Zone:4
+getNumberofCities Netherlands 5142279 Zone:3
+getNumberofCountriesMax 2 8331038 7733220 Zone:2
+getPopulationofCountry Switzerland Zone:4
+getPopulationofCountry Australia Zone:1
+getNumberofCountriesMax 3 4314801 8405682 Zone:1
+getNumberofCountriesMax 4 4703555 9119698 Zone:2
+getNumberofCities Sweden 5235308 Zone:1
+getNumberofCountries 9 4009882 Zone:2
+getNumberofCountries 8 5822514 Zone:3
+getNumberofCities Switzerland 3823147 Zone:5
+getNumberofCities Norway 1753845 Zone:5
+getNumberofCities Switzerland 4944791 Zone:2
+getNumberofCities Switzerland 4411564 Zone:5
+getNumberofCountries 5 4082534 Zone:4
+getNumberofCountries 4 2469875 Zone:2
+getNumberofCities Netherlands 994140 Zone:2
+getNumberofCountriesMax 5 4078115 3305800 Zone:2
+getNumberofCountriesMax 1 8065475 3815649 Zone:2
+getNumberofCountries 2 4993148 Zone:3
+getNumberofCountries 2 5869685 Zone:1
+getNumberofCities Belgium 7864169 Zone:4
+getNumberofCountriesMax 7 6222610 9591480 Zone:3
+getNumberofCities Germany 4939319 Zone:5
+getNumberofCountriesMax 6 5388351 7544265 Zone:3
+getPopulationofCountry Australia Zone:4
+getNumberofCities Israel 1175853 Zone:5
+getNumberofCountries 2 2358365 Zone:5
+getNumberofCountries 4 7095347 Zone:2
+getNumberofCities Netherlands 1051419 Zone:2
+getNumberofCities Germany 4129953 Zone:5
+getNumberofCountriesMax 4 9071003 5531856 Zone:2
+getNumberofCountries 10 6721948 Zone:1
+getNumberofCountriesMax 2 2877956 2050985 Zone:2
+getNumberofCountriesMax 6 2443889 7394056 Zone:3
+getPopulationofCountry Sweden Zone:3
+getNumberofCountriesMax 2 9947436 5732479 Zone:1
+getNumberofCountriesMax 5 3666899 496230 Zone:4
+getNumberofCountriesMax 7 6734275 9520692 Zone:2
+getNumberofCountriesMax 10 9750796 882217 Zone:3
+getNumberofCountries 8 9912105 Zone:4
+getPopulationofCountry Switzerland Zone:4
+getPopulationofCountry Sweden Zone:4
+getNumberofCities Switzerland 4015005 Zone:3
+getNumberofCities Norway 2733584 Zone:3
+getNumberofCities Belgium 2986773 Zone:3
+getNumberofCountries 4 7051202 Zone:3
+getNumberofCountries 4 6184964 Zone:4
+getPopulationofCountry Israel Zone:4
+getNumberofCountriesMax 9 4080481 7667632 Zone:3
+getNumberofCountries 2 9839517 Zone:1
+getNumberofCountriesMax 1 6292158 2640957 Zone:4
+getNumberofCountriesMax 1 5166555 3630320 Zone:2
+getNumberofCities Canada 9584265 Zone:3
+getNumberofCountriesMax 3 6804231 5007778 Zone:3
+getNumberofCountries 5 3277484 Zone:1
+getNumberofCountriesMax 8 1248692 8002581 Zone:1
+getPopulationofCountry Canada Zone:3
+getPopulationofCountry Australia Zone:4
+getNumberofCities Australia 3687951 Zone:1
+getNumberofCities Switzerland 3032627 Zone:5
+getNumberofCountriesMax 7 1845726 1313503 Zone:2
+getPopulationofCountry Netherlands Zone:2
+getNumberofCountriesMax 4 938610 6168471 Zone:4
+getNumberofCountries 6 4245084 Zone:3
+getNumberofCountriesMax 1 5701209 3002844 Zone:2
+getNumberofCountries 7 8738650 Zone:4
+getNumberofCities Israel 9197543 Zone:3
+getPopulationofCountry Germany Zone:3
+getNumberofCities Sweden 2874618 Zone:4
+getNumberofCountriesMax 6 3060778 426974 Zone:4
+getPopulationofCountry Belgium Zone:3
+getPopulationofCountry Egypt Zone:2
+getNumberofCountries 2 987569 Zone:3
+getNumberofCountriesMax 5 4527852 3658024 Zone:1
+getNumberofCountries 1 758619 Zone:3
+getNumberofCountries 4 1909658 Zone:1
+getNumberofCountries 6 5247800 Zone:4
+getNumberofCities Norway 696280 Zone:3
+getNumberofCountries 5 1548352 Zone:4
+getNumberofCountriesMax 4 3402621 5775346 Zone:3
+getNumberofCountries 5 1749654 Zone:4
+getNumberofCountries 3 8010232 Zone:4
+getPopulationofCountry Sweden Zone:4
+getNumberofCountriesMax 9 1862333 694120 Zone:5
+getNumberofCities Norway 3147523 Zone:3
+getNumberofCountries 5 6136091 Zone:3
+getPopulationofCountry Netherlands Zone:2
+getNumberofCities Egypt 1943037 Zone:4
+getNumberofCountriesMax 2 7237378 486537 Zone:3
+getNumberofCountriesMax 2 5053630 6414879 Zone:2
+getPopulationofCountry Switzerland Zone:2
+getNumberofCountriesMax 6 7070581 2108336 Zone:1
+getNumberofCountriesMax 2 5111194 9999265 Zone:2
+getPopulationofCountry Australia Zone:1
+getNumberofCountriesMax 1 4033284 1272537 Zone:5
+getNumberofCountriesMax 1 1143574 3612671 Zone:2
+getNumberofCountries 5 1129800 Zone:4
+getNumberofCountries 1 4373762 Zone:1
+getPopulationofCountry Canada Zone:2
+getPopulationofCountry Switzerland Zone:1
+getPopulationofCountry Netherlands Zone:4
+getNumberofCountriesMax 5 2263045 2673067 Zone:5
+getNumberofCountriesMax 10 7476476 2615706 Zone:3
+getNumberofCountries 1 6783678 Zone:3
+getNumberofCities Australia 8002627 Zone:1
+getPopulationofCountry Sweden Zone:2
+getPopulationofCountry Netherlands Zone:1
+getNumberofCities Switzerland 1006279 Zone:4
+getNumberofCities Sweden 3671493 Zone:1
+getPopulationofCountry Australia Zone:3
+getNumberofCountries 3 867832 Zone:2
+getNumberofCountries 10 2522602 Zone:1
+getNumberofCountries 7 1461414 Zone:2
+getNumberofCountriesMax 5 7864565 8151207 Zone:1
+getPopulationofCountry Australia Zone:1
+getNumberofCountries 1 8254176 Zone:3
+getNumberofCountries 9 2171317 Zone:1
+getNumberofCountries 1 4858699 Zone:1
+getNumberofCities Germany 9758224 Zone:5
+getNumberofCountriesMax 7 4082777 9838472 Zone:4
+getNumberofCountries 9 1588470 Zone:3
+getNumberofCities Sweden 2250356 Zone:1
+getNumberofCountries 4 3510309 Zone:1
+getNumberofCountries 8 588664 Zone:4
+getNumberofCountriesMax 5 1439444 8482219 Zone:2
+getNumberofCountriesMax 1 7779397 2245494 Zone:5
+getNumberofCountries 4 9450276 Zone:4
+getPopulationofCountry Egypt Zone:1
+getNumberofCities Egypt 9118402 Zone:4
+getPopulationofCountry Switzerland Zone:5
+getPopulationofCountry Israel Zone:5
+getPopulationofCountry Egypt Zone:1
+getPopulationofCountry Germany Zone:2
+getPopulationofCountry Sweden Zone:2
+getNumberofCities Norway 7046347 Zone:3
+getNumberofCountries 1 9340550 Zone:4
+getNumberofCities Belgium 7147007 Zone:2
+getNumberofCities Switzerland 7507372 Zone:5
+getNumberofCountriesMax 7 7422242 1886244 Zone:3
+getNumberofCountries 8 1473772 Zone:3
+getNumberofCities Norway 938609 Zone:3
+getNumberofCountriesMax 6 5616769 1912342 Zone:4
+getNumberofCities Canada 3422772 Zone:4
+getNumberofCities Germany 4940314 Zone:1
+getNumberofCities Germany 2120077 Zone:5
+getNumberofCountries 10 8875879 Zone:2
+getNumberofCountries 4 4240855 Zone:3
+getNumberofCountries 9 4527136 Zone:3
+getNumberofCountriesMax 9 1060582 6880950 Zone:4
+getNumberofCities Sweden 2425843 Zone:3
+getPopulationofCountry Sweden Zone:4
+getNumberofCities Egypt 9932972 Zone:5
+getNumberofCountries 10 4803570 Zone:3
+getPopulationofCountry Switzerland Zone:2
+getNumberofCities Australia 8106253 Zone:4
+getNumberofCities Germany 5167992 Zone:3
+getNumberofCountries 4 3070728 Zone:4
+getNumberofCountriesMax 5 276479 5841392 Zone:4
+getNumberofCities Belgium 9371310 Zone:5
+getNumberofCities Germany 5283502 Zone:4
+getNumberofCities Sweden 2779265 Zone:1
+getNumberofCountries 3 9398640 Zone:2
+getNumberofCities Germany 9709496 Zone:4
+getNumberofCountriesMax 2 5812641 1433982 Zone:4
+getNumberofCities Belgium 6275305 Zone:5
+getNumberofCountriesMax 4 9807622 2687309 Zone:2
+getPopulationofCountry Germany Zone:5
+getNumberofCountriesMax 6 1768712 3876898 Zone:2
+getPopulationofCountry Egypt Zone:5
+getNumberofCountries 5 2578746 Zone:5
+getNumberofCountries 1 2172057 Zone:4
+getPopulationofCountry Israel Zone:1
+getNumberofCountries 4 4610800 Zone:2
+getPopulationofCountry Belgium Zone:4
+getNumberofCountries 9 2274493 Zone:2
+getNumberofCountries 9 2373404 Zone:3
+getNumberofCountries 10 6683412 Zone:3
+getNumberofCities Switzerland 5438920 Zone:4
+getNumberofCountries 3 131632 Zone:2
+getPopulationofCountry Germany Zone:5
+getNumberofCountries 2 6045684 Zone:4
+getNumberofCities Sweden 749330 Zone:4
+getNumberofCountriesMax 1 1947177 7997546 Zone:3
+getPopulationofCountry Egypt Zone:3
+getPopulationofCountry Switzerland Zone:1
+getNumberofCountriesMax 1 2459234 9994400 Zone:4
+getNumberofCountriesMax 2 4675417 5305635 Zone:3
+getPopulationofCountry Australia Zone:4
+getNumberofCities Switzerland 2054005 Zone:1
+getNumberofCountriesMax 5 6752694 7085050 Zone:2
+getNumberofCountries 7 8332297 Zone:2
+getPopulationofCountry Canada Zone:5
+getNumberofCountries 9 1216324 Zone:5
+getNumberofCountries 9 7787909 Zone:2
+getNumberofCountries 4 7802355 Zone:1
+getPopulationofCountry Israel Zone:2
+getNumberofCities Germany 597538 Zone:3
+getNumberofCities Egypt 215880 Zone:4
+getPopulationofCountry Canada Zone:5
+getPopulationofCountry Australia Zone:3
+getNumberofCities Netherlands 7290006 Zone:3
+getNumberofCountries 7 6187337 Zone:2
+getNumberofCountries 5 1647083 Zone:3
+getPopulationofCountry Germany Zone:5
+getNumberofCountriesMax 3 1257191 3538458 Zone:1
+getNumberofCountries 3 247764 Zone:4
+getNumberofCities Egypt 6847127 Zone:1
+getPopulationofCountry Norway Zone:4
+getNumberofCountries 7 1368724 Zone:2
+getNumberofCities Netherlands 6730696 Zone:1
+getNumberofCountries 3 9664346 Zone:1
+getNumberofCountries 2 3438060 Zone:3
+getPopulationofCountry Australia Zone:4
+getPopulationofCountry Norway Zone:3
+getNumberofCities Canada 1481866 Zone:3
+getNumberofCountries 8 1879108 Zone:5
+getPopulationofCountry Israel Zone:3
+getNumberofCountries 1 6996714 Zone:5
+getNumberofCountries 7 4222495 Zone:1
+getNumberofCountriesMax 7 2158933 961982 Zone:1
+getNumberofCountriesMax 5 1811479 3706079 Zone:3
+getNumberofCountriesMax 6 3352761 2882395 Zone:1
+getNumberofCities Australia 1098591 Zone:3
+getNumberofCountriesMax 7 1179649 9944720 Zone:1
+getNumberofCountries 3 9111727 Zone:4
+getPopulationofCountry Australia Zone:3
+getNumberofCountriesMax 10 9117800 9390572 Zone:4
+getNumberofCities Canada 9347536 Zone:5
+getPopulationofCountry Belgium Zone:1
+getNumberofCountries 8 4823515 Zone:1
+getNumberofCountriesMax 1 7217010 1433529 Zone:5
+getNumberofCountriesMax 4 6190689 7220740 Zone:5
+getNumberofCountries 2 1778591 Zone:3
+getNumberofCountriesMax 6 4278243 9068326 Zone:3
+getNumberofCities Belgium 7622762 Zone:2
+getNumberofCountriesMax 4 5185960 5714763 Zone:4
+getNumberofCountriesMax 9 362740 2182924 Zone:4
+getPopulationofCountry Canada Zone:2
+getPopulationofCountry Switzerland Zone:5
+getNumberofCountriesMax 5 6387401 1262990 Zone:1
+getNumberofCountries 7 6655800 Zone:1
+getNumberofCountries 4 7200061 Zone:5
+getNumberofCountriesMax 4 9969823 4589857 Zone:5
+getNumberofCountries 9 4746329 Zone:1
+getNumberofCountries 6 9774912 Zone:4
+getNumberofCities Egypt 8102756 Zone:4
+getNumberofCities Germany 3397968 Zone:2
+getPopulationofCountry Israel Zone:1
+getPopulationofCountry Australia Zone:2
+getPopulationofCountry Germany Zone:5
+getNumberofCountries 5 4918248 Zone:4
+getNumberofCountriesMax 3 2049857 8456003 Zone:1
+getNumberofCities Netherlands 214634 Zone:5
+getNumberofCountries 1 549517 Zone:4
+getNumberofCities Germany 7384357 Zone:3
+getNumberofCountries 6 5252225 Zone:2
+getNumberofCountriesMax 7 8923490 4550167 Zone:1
+getNumberofCities Norway 8349769 Zone:2
+getNumberofCities Norway 3606948 Zone:3
+getNumberofCities Egypt 3876246 Zone:1
+getNumberofCountriesMax 6 184571 8005771 Zone:1
+getNumberofCountries 8 9041444 Zone:4
+getNumberofCountriesMax 10 7502599 7081962 Zone:4
+getNumberofCities Sweden 9026665 Zone:2
+getNumberofCities Egypt 5341152 Zone:5
+getNumberofCountriesMax 4 4707203 6601675 Zone:2
+getNumberofCountries 1 4727905 Zone:5
+getNumberofCities Norway 888991 Zone:4
+getNumberofCountries 4 7519396 Zone:1
+getPopulationofCountry Canada Zone:4
+getNumberofCountriesMax 10 2928219 4035553 Zone:1
+getPopulationofCountry Canada Zone:1
+getNumberofCountriesMax 8 4720014 4750248 Zone:4
+getNumberofCountriesMax 4 5767181 2526821 Zone:3
+getPopulationofCountry Australia Zone:3
+getNumberofCities Canada 4950430 Zone:1
+getNumberofCountries 4 244809 Zone:1
+getNumberofCountries 6 4350236 Zone:2
+getPopulationofCountry Norway Zone:4
+getNumberofCountries 3 178808 Zone:2
+getNumberofCountriesMax 5 4144790 5759483 Zone:4
+getNumberofCountriesMax 6 1751268 6675921 Zone:3
+getNumberofCities Belgium 4438491 Zone:2
+getNumberofCountries 9 9100811 Zone:1
+getNumberofCountries 2 6348901 Zone:5
+getNumberofCities Canada 5665061 Zone:5
+getNumberofCountries 7 9351163 Zone:3
+getNumberofCities Belgium 5146468 Zone:2
+getNumberofCountries 1 8702721 Zone:2
+getPopulationofCountry Canada Zone:1
+getPopulationofCountry Egypt Zone:1
+getNumberofCountries 8 251576 Zone:2
+getNumberofCountries 4 4619494 Zone:4
+getNumberofCities Israel 4253291 Zone:2
+getNumberofCountries 7 1677329 Zone:4
+getPopulationofCountry Belgium Zone:5
+getNumberofCities Egypt 7417048 Zone:4
+getNumberofCountries 9 3433240 Zone:1
+getPopulationofCountry Egypt Zone:2
+getNumberofCountries 3 4463873 Zone:4
+getNumberofCountriesMax 7 4704607 2957605 Zone:2
+getNumberofCountriesMax 6 1922871 9256965 Zone:5
+getNumberofCountries 5 3116344 Zone:2
+getNumberofCountriesMax 2 7547412 6809893 Zone:1
+getNumberofCountries 6 9654850 Zone:5
+getPopulationofCountry Belgium Zone:4
+getNumberofCities Sweden 8523592 Zone:1
+getNumberofCountriesMax 2 2223622 1432218 Zone:5
+getNumberofCountries 6 7322566 Zone:3
+getNumberofCities Australia 5115753 Zone:3
+getNumberofCountries 6 1513120 Zone:1
+getPopulationofCountry Germany Zone:2
+getNumberofCountriesMax 10 3931614 5858998 Zone:3
+getNumberofCities Netherlands 4330685 Zone:4
+getNumberofCountriesMax 5 8121394 9005940 Zone:3
+getNumberofCountries 8 9515964 Zone:1
+getNumberofCountriesMax 5 7650670 2336117 Zone:2
+getNumberofCountries 8 5660547 Zone:5
+getNumberofCities Netherlands 3580767 Zone:2
+getNumberofCountries 7 864925 Zone:2
+getPopulationofCountry Australia Zone:2
+getNumberofCountries 4 7492095 Zone:3
+getNumberofCities Israel 8569582 Zone:3
+getNumberofCities Belgium 798627 Zone:2
+getNumberofCities Switzerland 9629655 Zone:1
+getPopulationofCountry Australia Zone:3
+getPopulationofCountry Germany Zone:4
+getPopulationofCountry Germany Zone:5
+getPopulationofCountry Israel Zone:5
+getNumberofCountriesMax 3 3405589 8888491 Zone:2
+getNumberofCountriesMax 6 9294303 6874042 Zone:1
+getNumberofCities Netherlands 3073608 Zone:2
+getNumberofCities Egypt 4440807 Zone:5
+getPopulationofCountry Germany Zone:2
+getPopulationofCountry Belgium Zone:4
+getNumberofCountries 6 5176335 Zone:2
+getNumberofCountries 6 6906309 Zone:2
+getNumberofCountriesMax 7 5708664 3502440 Zone:4
+getNumberofCountries 3 6274514 Zone:4
+getPopulationofCountry Norway Zone:5
+getNumberofCities Germany 9667505 Zone:4
+getNumberofCountries 8 9831691 Zone:1
+getNumberofCities Norway 5629637 Zone:2

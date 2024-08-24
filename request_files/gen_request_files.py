@@ -51,6 +51,8 @@ def generate_file(filename, num_lines):
             f.write(line + '\n')
 
 # Generate a files
-generate_file('client_1.txt', 1000)
-generate_file('client_2.txt', 1000)
-generate_file('client_3.txt', 1000)
+generate_file('./request_files/client_1.txt', 1000)
+generate_file('./request_files/client_2.txt', 1000)
+generate_file('./request_files/client_3.txt', 1000)
+generate_file('./request_files/client_4.txt', 1000)
+generate_file('./request_files/client_5.txt', 1000)

@@ -2,9 +2,10 @@ use csv::WriterBuilder;
 use std::error::Error;
 use std::fs::OpenOptions;
 use std::io::Write;
+use std::net::SocketAddr;
 use std::path::Path;
 use std::sync::Arc;
-use std::time::Instant;
+use std::time::{Duration, Instant};
 use std::{env, fs::File, io::Read};
 
 use stat_service::stat_methods_client::StatMethodsClient;
@@ -28,10 +29,24 @@ pub mod stat_service {
 /// Should be used in a thread. Does not crash or panic the program.
 async fn create_client_and_get_population_of_country(
     client_zone: i32,
-    inputs: Vec<String>,
-    server_addr: String,
+    inputs: Vec<String>
 ) -> Result<(), Status> {
+    // Get variables from the line
+    assert!(inputs.len() == 3);
+    let country_name = inputs[1].clone();
+    let zone = inputs[2].chars().last().unwrap().to_digit(10).unwrap();
+
+    // Pause based on if the client is in the same zone or not
+    if zone != client_zone as u32{
+        // Simulates switching to another server in a separate zone
+        tokio::time::sleep(Duration::from_millis(170)).await;
+    }else{
+        // Client is in the same zone, only simulate network latency 
+        tokio::time::sleep(Duration::from_millis(80)).await;
+    }
+    
     // Connect to server:
+    let server_addr = format!("http://127.0.0.1:5{}000", zone);
     let mut client = match StatMethodsClient::connect(server_addr).await {
         Ok(client) => client,
         Err(e) => {
@@ -39,16 +54,12 @@ async fn create_client_and_get_population_of_country(
             return Err(Status::internal("Failed to connect to server"));
         }
     };
-    // Get variables from the line
-    assert!(inputs.len() == 3);
-    let country_name = inputs[1].clone();
-    let zone = inputs[2].chars().last().unwrap().to_digit(10).unwrap();
 
     // Build the request to the server
     let mut request = Request::new(PopulationRequest {
         country: country_name.to_string(),
     });
-
+    
     // Set zone data as meta data in the request
     request
         .metadata_mut()
@@ -105,17 +116,8 @@ async fn create_client_and_get_population_of_country(
 async fn create_client_and_get_number_of_cities(
     client_zone: i32,
     inputs: Vec<String>,
-    server_addr: String,
 ) -> Result<(), Status> {
-    // Connect to server:
-    let mut client = match StatMethodsClient::connect(server_addr).await {
-        Ok(client) => client,
-        Err(e) => {
-            println!("[ERROR] Failed to connect to server: {}", e);
-            return Err(Status::internal("Failed to connect to server"));
-        }
-    };
-
+    
     // Get variables
     assert!(inputs.len() == 4);
     let country_name = inputs[1].clone();
@@ -126,7 +128,28 @@ async fn create_client_and_get_number_of_cities(
             return Err(Status::internal("Failed to parse error"));
         }
     };
+
+    // The zone of the request 
     let zone = inputs[3].chars().last().unwrap().to_digit(10).unwrap();
+
+    // Pause based on if the client is in the same zone or not
+    if zone != client_zone as u32{
+        // Simulates switching to another server in a separate zone
+        tokio::time::sleep(Duration::from_millis(170)).await;
+    }else{
+        // Client is in the same zone, only simulate network latency 
+        tokio::time::sleep(Duration::from_millis(80)).await;
+    }
+    
+    // Connect to server
+    let server_addr = format!("http://127.0.0.1:5{}000", zone);
+    let mut client = match StatMethodsClient::connect(server_addr).await {
+        Ok(client) => client,
+        Err(e) => {
+            println!("[ERROR] Failed to connect to server: {}", e);
+            return Err(Status::internal("Failed to connect to server"));
+        }
+    };
 
     // Build the request to the server
     let mut request = Request::new(NumberOfCitiesRequest {
@@ -191,18 +214,8 @@ async fn create_client_and_get_number_of_cities(
 /// Should be used in a thread. Does not crash or panic the program.
 async fn create_client_and_get_number_of_countries(
     client_zone: i32,
-    inputs: Vec<String>,
-    server_addr: String,
+    inputs: Vec<String>
 ) -> Result<(), Status> {
-    // Connect to server:
-    let mut client = match StatMethodsClient::connect(server_addr).await {
-        Ok(client) => client,
-        Err(e) => {
-            println!("[ERROR] Failed to connect to server: {}", e);
-            return Err(Status::internal("Failed to connect to server"));
-        }
-    };
-
     // Get variables
     assert!(inputs.len() == 4);
     let citycount = match inputs[1].parse::<i32>() {
@@ -220,6 +233,26 @@ async fn create_client_and_get_number_of_countries(
         }
     };
     let zone = inputs[3].chars().last().unwrap().to_digit(10).unwrap();
+
+    // Pause based on if the client is in the same zone or not
+    if zone != client_zone as u32{
+        // Simulates switching to another server in a separate zone
+        tokio::time::sleep(Duration::from_millis(170)).await;
+    }else{
+        // Client is in the same zone, only simulate network latency 
+        tokio::time::sleep(Duration::from_millis(80)).await;
+    }
+
+    // Connect to server:
+    let server_addr = format!("http://127.0.0.1:5{}000", zone);
+    let mut client = match StatMethodsClient::connect(server_addr).await {
+        Ok(client) => client,
+        Err(e) => {
+            println!("[ERROR] Failed to connect to server: {}", e);
+            return Err(Status::internal("Failed to connect to server"));
+        }
+    };
+
 
     let mut request = Request::new(NumberOfCountriesRequest { citycount, min });
 
@@ -279,18 +312,9 @@ async fn create_client_and_get_number_of_countries(
 /// Should be used in a thread. Does not crash or panic the program.
 async fn create_client_and_get_number_of_countries_max(
     client_zone: i32,
-    inputs: Vec<String>,
-    server_addr: String,
+    inputs: Vec<String>
 ) -> Result<(), Status> {
-    // Connect to server:
-    let mut client = match StatMethodsClient::connect(server_addr).await {
-        Ok(client) => client,
-        Err(e) => {
-            println!("[ERROR] Failed to connect to server: {}", e);
-            return Err(Status::internal("Failed to connect to server"));
-        }
-    };
-
+    
     // Get variables
     assert!(inputs.len() == 5);
     let citycount = match inputs[1].parse::<i32>() {
@@ -300,7 +324,7 @@ async fn create_client_and_get_number_of_countries_max(
             return Err(Status::internal("Failed to parse error"));
         }
     };
-
+    
     let min = match inputs[2].parse::<i32>() {
         Ok(val) => val,
         Err(_) => {
@@ -308,7 +332,7 @@ async fn create_client_and_get_number_of_countries_max(
             return Err(Status::internal("Failed to parse error"));
         }
     };
-
+    
     let max = match inputs[3].parse::<i32>() {
         Ok(val) => val,
         Err(_) => {
@@ -316,8 +340,27 @@ async fn create_client_and_get_number_of_countries_max(
             return Err(Status::internal("Failed to parse error"));
         }
     };
-
+    
     let zone = inputs[4].chars().last().unwrap().to_digit(10).unwrap();
+
+    // Pause based on if the client is in the same zone or not
+    if zone != client_zone as u32{
+        // Simulates switching to another server in a separate zone
+        tokio::time::sleep(Duration::from_millis(170)).await;
+    }else{
+        // Client is in the same zone, only simulate network latency 
+        tokio::time::sleep(Duration::from_millis(80)).await;
+    }
+
+    // Connect to server
+    let server_addr = format!("http://127.0.0.1:5{}000", zone);
+    let mut client = match StatMethodsClient::connect(server_addr).await {
+        Ok(client) => client,
+        Err(e) => {
+            println!("[ERROR] Failed to connect to server: {}", e);
+            return Err(Status::internal("Failed to connect to server"));
+        }
+    };
 
     let mut request = Request::new(NumberOfCountriesMaxRequest {
         citycount,
@@ -385,39 +428,36 @@ async fn write_client_log(
     waiting_ms: &u64,
     client_zone: &i32,
 ) -> Result<(), Box<dyn Error>> {
-    // Build the file path based on the client zone
     let log_dir = "log";
     let file_name = format!("{}/client_data_z{}.csv", log_dir, client_zone);
     let path = Path::new(&file_name);
 
-    // Create the directory if it does not exist
     if let Some(parent) = path.parent() {
         if !parent.exists() {
             std::fs::create_dir_all(parent)?;
         }
     }
 
-    // Open or create the file
-    let file: File = OpenOptions::new()
-        .create(true) // Create the file if it does not exist
-        .append(true) // Open the file in append mode
-        .open(&file_name)?;
+    let file = OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&file_name)
+        .map_err(|e| format!("Failed to open file {}: {}", file_name, e))?;
 
-    // Create a CSV writer
     let mut wtr = WriterBuilder::new().has_headers(false).from_writer(file);
 
-    // Write the record to the CSV file
     wtr.write_record(&[
         turn_around_ms.to_string(),
         execution_ms.to_string(),
         waiting_ms.to_string(),
-    ])?;
+    ])
+    .map_err(|e| format!("Failed to write record to file {}: {}", file_name, e))?;
 
-    // Ensure all data is written to disk
-    wtr.flush()?;
+    wtr.flush().map_err(|e| format!("Failed to flush writer for file {}: {}", file_name, e))?;
 
     Ok(())
 }
+
 
 /// Clean a log file for given client.
 ///
@@ -480,9 +520,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         client_zone, file_path
     );
 
-    // Connect to the server
-    let addr = "http://127.0.0.1:50051";
-
     // Create X amount of threads to simulate new clients connecting and doing a task
     // Semaphore is created with a limited amount of permits allowed
     let semaphore = Arc::new(Semaphore::new(10));
@@ -504,32 +541,28 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 "getPopulationofCountry" => {
                     let _ = create_client_and_get_population_of_country(
                         client_zone,
-                        inputs,
-                        addr.to_string(),
+                        inputs
                     )
                     .await;
                 }
                 "getNumberofCities" => {
                     let _ = create_client_and_get_number_of_cities(
                         client_zone,
-                        inputs,
-                        addr.to_string(),
+                        inputs
                     )
                     .await;
                 }
                 "getNumberofCountries" => {
                     let _ = create_client_and_get_number_of_countries(
                         client_zone,
-                        inputs,
-                        addr.to_string(),
+                        inputs
                     )
                     .await;
                 }
                 "getNumberofCountriesMax" => {
                     let _ = create_client_and_get_number_of_countries_max(
                         client_zone,
-                        inputs,
-                        addr.to_string(),
+                        inputs
                     )
                     .await;
                 }
