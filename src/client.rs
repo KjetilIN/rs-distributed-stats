@@ -512,7 +512,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let contents = Arc::new(contents);
 
     // Clean the log file
-    clean_client_log(&client_zone).await?;
+    let _ = clean_client_log(&client_zone).await;
 
     // Process the file contents
     println!(
