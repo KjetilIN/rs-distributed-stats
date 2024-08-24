@@ -42,3 +42,27 @@ echo "Client 5 started"
 CLIENT5_PID=$!
 
 echo "Clients are running"
+
+# Wait for all client processes to finish
+wait $CLIENT1_PID
+echo "Client 1 finished"
+wait $CLIENT2_PID
+echo "Client 2 finished"
+wait $CLIENT3_PID
+echo "Client 3 finished"
+wait $CLIENT4_PID
+echo "Client 4 finished"
+wait $CLIENT5_PID
+echo "Client 5 finished"
+
+echo "All clients have finished"
+echo "Stopping servers"
+
+# Kill all server processes (if needed)
+kill $SERVER1_PID
+kill $SERVER2_PID
+kill $SERVER3_PID
+kill $SERVER4_PID
+kill $SERVER5_PID
+
+echo "Servers stopped"
